@@ -4,7 +4,7 @@ service:
   - docker
 
 before_install:
-  - docker build -t xelatex/CV
+  - docker build -t xelatex/cv
 
 script:
   - make
