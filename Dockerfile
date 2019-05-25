@@ -1,12 +1,12 @@
 FROM ubuntu:18.04
 
 ENV DIR /CV
-RUN apt-get -qq update && \
-	rm -rf /var/lib/apt/lists/* \
-	apt-get install -y --no-install-recommends git \
+RUN apt-get -qy update && \
+    apt-get upgrade -qy && \
+    apt-get install -y --no-install-recommends git \
 	make \
 	wget \
-	fonts-robot \
+	fonts-roboto \
     unzip \
     texlive-full \
     python-pygments gnuplot \
@@ -15,8 +15,8 @@ RUN apt-get -qq update && \
     texlive-xetex \
     texlive-fonts-extra \
     texlive-science \
-    texlive-latex-recommended
-
+    texlive-latex-recommended && \
+    rm -rf /var/lib/apt/lists/*
 RUN apt-get clean
 
 WORKDIR ${DIR}
