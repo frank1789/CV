@@ -8,7 +8,7 @@ RUN apt-get -qq update && \
 	wget \
 	fonts-robot \
 	apt-transport-https \
-    unzip && \
+    unzip \
     texlive-base \
     texlive-latex-extra \
     texlive-xetex \
@@ -16,6 +16,8 @@ RUN apt-get -qq update && \
     texlive-science \
     texlive-latex-recommended \
     latexmk
+
+RUN apt-get clean
 
 WORKDIR ${DIR}
 ENTRYPOINT ["/bin/bash", "-c", "make", "-f", "Makefile"]
