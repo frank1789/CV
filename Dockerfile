@@ -7,15 +7,15 @@ RUN apt-get -qq update && \
 	make \
 	wget \
 	fonts-robot \
-	apt-transport-https \
     unzip \
+    texlive-full \
+    python-pygments gnuplot \
     texlive-base \
     texlive-latex-extra \
     texlive-xetex \
     texlive-fonts-extra \
     texlive-science \
-    texlive-latex-recommended \
-    latexmk
+    texlive-latex-recommended
 
 RUN apt-get clean
 
