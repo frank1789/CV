@@ -4,7 +4,7 @@ service:
   - docker
 
 before_install:
-  - docker build -t cv .
+  - docker build -t xelatex/cv .
 
 script:
-  - docker run -it -v ${PWD}:/cv ENV cv
+  - docker run -it -v ${PWD}:/cv xelatex/cv
