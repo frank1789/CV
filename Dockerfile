@@ -1,15 +1,15 @@
 FROM ubuntu:18.04
 
 ENV DIR /CV
-RUN apt -qq update && \
+RUN apt-get -qq update && \
 	rm -rf /var/lib/apt/lists/* \
-	apt install -y --no-install-recommends git \
+	apt-get install -y --no-install-recommends git \
 	make \
 	wget \
 	fonts-robot \
 	apt-transport-https \
     unzip && \
-    apt install -y texlive-base \
+    apt-get install -y texlive-base \
         texlive-latex-extra \
         texlive-xetex \
         texlive-lang-cyrillic \
