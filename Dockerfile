@@ -9,14 +9,13 @@ RUN apt-get -qq update && \
 	fonts-robot \
 	apt-transport-https \
     unzip && \
-    apt-get install -y texlive-base \
-        texlive-latex-extra \
-        texlive-xetex \
-        texlive-lang-cyrillic \
-        texlive-fonts-extra \
-        texlive-science \
-        texlive-latex-recommended \
-        latexmk
+    texlive-base \
+    texlive-latex-extra \
+    texlive-xetex \
+    texlive-fonts-extra \
+    texlive-science \
+    texlive-latex-recommended \
+    latexmk
 
 WORKDIR ${DIR}
 ENTRYPOINT ["/bin/bash", "-c", "make", "-f", "Makefile"]
