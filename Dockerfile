@@ -1,5 +1,6 @@
 FROM ubuntu:18.04
 
+ENV DIR /CV
 RUN apt -qq update && \
 	rm -rf /var/lib/apt/lists/* \
 	apt install -y --no-install-recommends git \
@@ -7,7 +8,7 @@ RUN apt -qq update && \
 	wget \
 	fonts-robot \
 	apt-transport-https \
-        unzip && \
+    unzip && \
     apt install -y texlive-base \
         texlive-latex-extra \
         texlive-xetex \
@@ -17,5 +18,5 @@ RUN apt -qq update && \
         texlive-latex-recommended \
         latexmk
 
-
-
+WORKDIR ${DIR}
+ENTRYPOINT ["/bin/bash", "-c", "make", "-f", "Makefile"]
