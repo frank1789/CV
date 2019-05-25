@@ -1,0 +1,319 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Friggeri Resume/CV
+% XeLaTeX Template
+% Version 1.2 (3/5/15)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+\usepackage[utf8]{inputenc}
+\usepackage[italian, english]{babel}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{fontawesome}
+\newfontfamily\fatest{FontAwesome.otf} 
+\definecolor{linkedin}{HTML}{1683BB}
+\definecolor{skypeblue}{RGB}{0,175,240}
+\definecolor{phonegreen}{HTML}{006B3C}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks = false,
+}
+
+\newcommand{\LinkedinColour}{{\color{linkedin}{\fatest\char"F08C}}}
+\newcommand{\Email}{{\color{black} \fatest\char"F003}} 
+\newcommand{\Skype}{{\color{skypeblue} \fatest\char"F17E}}
+%\newcommnad{\Github}{{\fatest\char"F09B}}
+
+%note without number reference
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+\addbibresource{bibliography.bib} % Specify the bibliography file to include publications
+
+\begin{document}
+
+\header{Francesco}{Argentieri}{junior mechanic engineer} % Your name and current job title/field
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+\section{contact}
+~
+Circonvallazione Istoniense, 20
+Vasto (CH), 66054
+Italy
+~
+\color{phonegreen}\faPhone \, +39 334 273 4061
+~
+\Email \href{mailto:francesco.argentieri89@gmail.com}{francesco.\\argentieri89@gmail.com}
+%\href{http://www.smith.com}{http://www.smith.com}
+%\href{http://facebook.com/johnsmith}{fb://jsmith}
+\LinkedinColour \href{https://it.linkedin.com/in/francesco-argentieri}{Francesco Argentieri}
+\Skype \href{skype:my_username?add}{francesco\_argentieri}
+\section{languages}
+Italian--mother tongue
+English--upper intermediate
+%\section{programming}
+%C++, Python, Qt
+%Matlab \& Maple
+%\LaTeX{}
+\end{aside}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{education}
+
+\begin{entrylist}
+
+%------------------------------------------------
+
+\entry{2015--Now}
+{M. Sc. {\normalfont Mechatronics Engineering}}
+{University of Trento}
+{\emph{Student}\\ Specialization in Mechanics--mechatronics}
+
+%------------------------------------------------
+
+\entry
+{2008--2015}
+{Bachelor {\normalfont Mechanics Engineering}}
+{Marche Polytechnic University}
+{Thesis "\emph{Structural analysis of an automotive hot formed sheet component with variable thickness}".\\
+Specialization in Energy-thermomechanical}
+
+%------------------------------------------------
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{experience}
+
+\begin{entrylist}
+
+%------------------------------------------------
+
+\entry{9/2018–11/2018}
+{ University of Trento} 
+{Trento, Italy}
+{\emph{Rapid development CNN for image classification using fine-tuning techniques and
+ implementation on SoC systems}\\
+Thanks to the use of framework like Keras is possible to develop refinement techniques starting
+from already known models. There is discussion of the architecture of a USB commercial device,
+Intel Movidius neural compute stick, with low power consumption for neural network execution
+on SoC systems such as Raspberry. Finally, there are the problems and limitations that occurred
+during the development and distribution of the software implemented.\\
+\textbf{sofware:} Python 3.6, Keras, Tensorflow, Altair PBS (HPC)\quad
+\href{https://github.com/frank1789/NeuralNetworks}{\faGithub}
+}
+
+%------------------------------------------------
+
+
+\entry{9/2017–6/2018}
+{University of Trento} 
+{Trento, Italy}
+{\emph{Distributed robots mapping exploration}\\
+Project for the final exam where we consider the problem of exploring 
+an environment unknown with a team of robots. As in the exploration of 
+single robots, the goal is to minimize the overall exploration time. 
+The key problem to solve in the context of multiple robots is that of choose 
+the appropriate destination points for the individual robots so that can explore 
+different regions of the environment simultaneously.\\
+\textbf{software: } Matlab, mex, C++, \LaTeX \quad
+\href{https://github.com/frank1789/DistributedSystemProject}{\faGithub}
+}
+
+%------------------------------------------------
+
+
+\entry{5/2017–8/2017}
+{University of Trento} 
+{Trento, Italy}
+{\emph{Helicopter's tail-boom and rotor vibration analysis}\\
+This work performed during the master course of Modelling and Design with Finite
+Elements, for the part about the course project.
+The purpose is to present a consistent finite-element
+formulation, developed to predict the free vibration characteristics of two
+different helicopters tail-boom structures.\\
+\textbf{software: } Ansys Mechanical (APDL), \LaTeX \quad
+\href{https://github.com/frank1789/FEM-Analysis---Helicopter-s-Tail}{\faGithub}}
+
+%------------------------------------------------
+
+\entry{2/2015--6/2015}
+{DIISM, Marche Polytechnic University}
+{Ancona, Italy}
+{\emph{Intership}\\
+In the field of machine design developed a thesis during which it
+has developed the ability to set and solve problems through the FEM simulations.\\
+\textbf{software: } Ansys Mechanical, Altair  HyperMesh, LsDyna, Qt, \LaTeX \quad
+\href{https://github.com/frank1789/LsDynaToAPDL}{\faGithub}
+}
+
+%------------------------------------------------
+
+\end{entrylist}
+
+
+%----------------------------------------------------------------------------------------
+%	SKILLS SECTION
+%----------------------------------------------------------------------------------------
+\pagebreak
+\section{skills}
+
+\begin{tabular}{rlrl}
+\textbf{OS} && \textbf{Package}\\
+& MacOS, Linux, Windows  &&  Matlab \& Simulink, Maple, Ansys,\\ &&& SolidWorks, HyperWorks \\
+\textbf{Software} && \textbf{Programming}\\
+&Microsoft Office, iLife &&  C++,  C, Qt, Python, Ruby, R, \\ &&&\LaTeX{} \\
+\textbf{Other}\\
+&Internet networking, Arduino, Raspberry Pi\\
+\end{tabular}\\
+
+%---------------------------------------------
+
+%\begin{entrylist}
+%
+%%------------------------------------------------
+%
+%%\entry
+%%{2016}
+%%{Project}
+%%{M. Sc. Mechatronics Engineering, University of Trento}
+%%{Excellent ability to work in team gained during the development of university projects.}
+%%%------------------------------------------------
+%
+%\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{awards}
+%
+%\begin{entrylist}
+%
+%%------------------------------------------------
+%
+%\entry
+%{2015--2015}
+%{Postgraduate Scholarship}
+%{School of Business, The University of California}
+%{Awarded to the top student in their final year of a Bachelors degree. Mastered the art of filing accurate TPS reports.}
+%
+%%------------------------------------------------
+%
+%\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	CERTIFICATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{certification}
+
+\begin{entrylist}
+
+%------------------------------------------------
+
+\entry
+{2015}
+{Council of Europe Level B1 (PET)}
+{Cambridge English, University of Cambridge}
+
+%------------------------------------------------
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{communication skills}
+%
+%\begin{entrylist}
+%
+%%------------------------------------------------
+%
+%\entry
+%{2016}
+%{Project: "\emph{High Mobility Robot}"}
+%{University of Trento}
+%{Excellent attitude for teamwork gained during the development of the same by applying the concurrent engineering.
+%Also good ability to work with deadlines and long period stress.}
+%
+%%------------------------------------------------
+%
+%\entry
+%{2015}
+%{Oral Presentation}
+%{DIISM, Marche Polytechnic University}
+%{Presented the research I conducted for my Bachelor  mechanical engineering degree.}
+%
+%%------------------------------------------------
+%
+%\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{interests}
+
+%\textbf{professional:} automotive, design, robotic, R\&D, physics, space, aeronautics, IT   \textbf{personal:} cinema, cooking, sport, health and wellness, science and technology
+
+\section{driver's license B}
+
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{publications}
+%
+%\printbibsection{article}{article in peer-reviewed journal} % Print all articles from the bibliography
+%
+%\printbibsection{book}{books} % Print all books from the bibliography
+%
+%\begin{refsection} % This is a custom heading for those references marked as "inproceedings" but not containing "keyword=france"
+%\nocite{*}
+%\printbibliography[sorting=chronological, type=inproceedings, title={international peer-reviewed conferences/proceedings}, notkeyword={france}, heading=bibheading]
+%\end{refsection}
+%
+%\begin{refsection} % This is a custom heading for those references marked as "inproceedings" and containing "keyword=france"
+%\nocite{*}
+%%\printbibliography[sorting=chronological, type=inproceedings, title={local peer-reviewed conferences/proceedings}, keyword={france}, heading=bibheading]
+%\end{refsection}
+%
+%%\printbibsection{misc}{other publications} % Print all miscellaneous entries from the bibliography
+%
+%%\printbibsection{report}{research reports} % Print all research reports from the bibliography
+%
+%%----------------------------------------------------------------------------------------
+\blfootnote{Autorizzo il trattamento dei dati personali contenuti nel presente curriculum vitae ai sensi del D.L. 196/2003 "Codice in materia di protezione dei dati personali".}
+\end{document}
