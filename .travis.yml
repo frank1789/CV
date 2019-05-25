@@ -7,4 +7,4 @@ before_install:
   - docker build -t cv .
 
 script:
-  - docker run -it -v ${PWD}:/CV ENV cv
+  - docker run -it -v ${PWD}:/cv ENV cv
