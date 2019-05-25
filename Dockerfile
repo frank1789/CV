@@ -1,5 +1,5 @@
 FROM ubuntu:18.04
-
+ENV DEBIAN_FRONTEND noninteractive
 ENV DIR /CV
 RUN apt-get -qy update && \
     apt-get upgrade -qy && \
