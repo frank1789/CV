@@ -1,0 +1,11 @@
+language: generic
+
+service:
+  - docker
+
+before_install:
+  - docker build -t xelatex/CV
+
+script:
+  - make
+  - make clean
