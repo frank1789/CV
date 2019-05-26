@@ -4,16 +4,14 @@ service:
   - docker
 
 before_install:
-  - docker build -t xelatex/cv .
+  - docker build -t cv .
 
 install:
-  - docker save xelatex | gzip > docker/xelatex.tar.gz
+  - docker save cv | gzip > docker/cv.tar.gz
 cache:
   directories:
   - docker
 
-before_script:
-  - gzip -dc docker/xelatex.tar.gz | docker load
 
 script:
-  - docker run -it -v ${PWD}:/cv xelatex/cv
+  - docker run -it -v ${PWD}:/cv cv
