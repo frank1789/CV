@@ -13,7 +13,7 @@
 % Colors %
 %%%%%%%%%%
 
-\usepackage{fontawesome}
+\usepackage{fontawesome5}
 
 \RequirePackage{xcolor}
 
@@ -52,7 +52,7 @@
 %%%%%%%%%
 \RequirePackage{fontspec}
 \RequirePackage{unicode-math}
-\RequirePackage{fontawesome}
+\RequirePackage{fontawesome5}
 \RequirePackage{calc}
 
 

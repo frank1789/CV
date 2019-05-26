@@ -24,20 +24,19 @@
 \usepackage[italian, english]{babel}
 \usepackage{fontspec}
 \usepackage{xcolor}
-\usepackage{fontawesome}
-\newfontfamily\fatest{FontAwesome.otf} 
 \definecolor{linkedin}{HTML}{1683BB}
 \definecolor{skypeblue}{RGB}{0,175,240}
 \definecolor{phonegreen}{HTML}{006B3C}
 \usepackage{hyperref}
 \hypersetup{
-    colorlinks = false,
+  colorlinks=false,
+  pdfborder={0 0 0},
 }
 
-\newcommand{\LinkedinColour}{{\color{linkedin}{\fatest\char"F08C}}}
-\newcommand{\Email}{{\color{black} \fatest\char"F003}} 
-\newcommand{\Skype}{{\color{skypeblue} \fatest\char"F17E}}
-%\newcommnad{\Github}{{\fatest\char"F09B}}
+\newcommand{\LinkedinColour}{{\color{linkedin} \faLinkedin}}
+\newcommand{\Email}{{\color{black} \faEnvelope \,}}
+\newcommand{\Skype}{{\color{skypeblue} \faSkype}}
+\newcommand{\Phone}{{\color{phonegreen} \faPhone}}
 
 %note without number reference
 \newcommand\blfootnote[1]{%
@@ -64,7 +63,7 @@ Circonvallazione Istoniense, 20
 Vasto (CH), 66054
 Italy
 ~
-\color{phonegreen}\faPhone \, +39 334 273 4061
+\Phone \, +39 334 273 4061
 ~
 \Email \href{mailto:francesco.argentieri89@gmail.com}{francesco.\\argentieri89@gmail.com}
 %\href{http://www.smith.com}{http://www.smith.com}
@@ -119,7 +118,7 @@ Specialization in Energy-thermomechanical}
 %------------------------------------------------
 
 \entry{9/2018–11/2018}
-{ University of Trento} 
+{ University of Trento}
 {Trento, Italy}
 {\emph{Rapid development CNN for image classification using fine-tuning techniques and
  implementation on SoC systems}\\
@@ -136,14 +135,14 @@ during the development and distribution of the software implemented.\\
 
 
 \entry{9/2017–6/2018}
-{University of Trento} 
+{University of Trento}
 {Trento, Italy}
 {\emph{Distributed robots mapping exploration}\\
-Project for the final exam where we consider the problem of exploring 
-an environment unknown with a team of robots. As in the exploration of 
-single robots, the goal is to minimize the overall exploration time. 
-The key problem to solve in the context of multiple robots is that of choose 
-the appropriate destination points for the individual robots so that can explore 
+Project for the final exam where we consider the problem of exploring
+an environment unknown with a team of robots. As in the exploration of
+single robots, the goal is to minimize the overall exploration time.
+The key problem to solve in the context of multiple robots is that of choose
+the appropriate destination points for the individual robots so that can explore
 different regions of the environment simultaneously.\\
 \textbf{software: } Matlab, mex, C++, \LaTeX \quad
 \href{https://github.com/frank1789/DistributedSystemProject}{\faGithub}
@@ -153,7 +152,7 @@ different regions of the environment simultaneously.\\
 
 
 \entry{5/2017–8/2017}
-{University of Trento} 
+{University of Trento}
 {Trento, Italy}
 {\emph{Helicopter's tail-boom and rotor vibration analysis}\\
 This work performed during the master course of Modelling and Design with Finite
