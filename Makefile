@@ -9,9 +9,6 @@ all: build
 build:
 	@echo "Build xelatex document"
 	${CC} ${FLAGS} ${TEX}
-	${BB} ${BIB}
-	${CC} ${FLAGS} ${TEX}
-	${CC} ${FLAGS} ${TEX}
 	@echo "clean temporally files"
 	make clean
 
