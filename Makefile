@@ -4,13 +4,13 @@ FLAGS = -shell-escape
 TEX = $(wildcard *.tex)
 BIB = $(wildcard *.bib)
 
-all: build
+all: build clean
 
 build:
-	@echo "Build xelatex document"
+	@echo "----------------------------------"
+	@echo "===== Build xelatex document ====="
+	@echo "----------------------------------"
 	${CC} ${FLAGS} ${TEX}
-	@echo "clean temporally files"
-	make clean
 
 clean:
-	rm *.aux *.fdb_latexmk *.fls *.log *.out *.synctex.gz *.toc *.back
+	rm -rf *.aux *.fdb_latexmk *.fls *.log *.out *.synctex.gz *.toc *.back
