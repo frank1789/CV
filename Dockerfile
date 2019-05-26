@@ -3,7 +3,7 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV DIR /cv
 RUN apt-get -qy update && \
     apt-get upgrade -qy && \
-    apt-get install -y --no-install-recommends git \
+    apt-get install -qy --no-install-recommends git \
 	make \
 	wget \
 	fonts-roboto \
