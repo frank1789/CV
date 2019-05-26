@@ -1,4 +1,6 @@
 [![Build Status](https://travis-ci.org/frank1789/CV.svg?branch=master)](https://travis-ci.org/frank1789/CV)
+[![License: CC BY-NC-SA 3.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%203.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-sa/3.0/)
+
 # About
 Latest version of my CV, typesetted in Helvetica and using colors inspired by Monokai (there is an `print` option which renders in black and white, and reverts the header to dark on light, if printing on paper is needed).
 
