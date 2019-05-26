@@ -1,7 +1,19 @@
-all: build run
+CC = xelatex
+BB = biber
+FLAGS = -shell-escape
+TEX = $(wildcard *.tex)
+BIB = $(wildcard *.bib)
+
+all: build
 
 build:
-    latexmk -xelatex -synctex=1 main.tex
+	@echo "Build xelatex document"
+	${CC} ${FLAGS} ${TEX}
+	${BB} ${BIB}
+	${CC} ${FLAGS} ${TEX}
+	${CC} ${FLAGS} ${TEX}
+	@echo "clean temporally files"
+	make clean
 
 clean:
-    rm *.aux *.fdb_latexmk *.fls *.log *.out *.synctex.gz *.toc *.back
+	rm *.aux *.fdb_latexmk *.fls *.log *.out *.synctex.gz *.toc *.back
