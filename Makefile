@@ -11,6 +11,8 @@ build:
 	@echo "===== Build xelatex document ====="
 	@echo "----------------------------------"
 	${CC} ${FLAGS} ${TEX}
+	${CC} ${FLAGS} ${TEX}
+	${CC} ${FLAGS} ${TEX}
 
 clean:
 	rm -rf *.aux *.fdb_latexmk *.fls *.log *.out *.synctex.gz *.toc *.back
