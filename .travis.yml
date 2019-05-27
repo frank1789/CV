@@ -1,9 +1,11 @@
+sudo: required
 language: generic
 
 service:
 - docker
 
 cache:
+  bundler: true
   directories:
   - /home/travis/docker/
 
@@ -12,7 +14,8 @@ env:
     - DOCKER_CACHE_FILE=/home/travis/docker/cache.tar.gz
 
 before_install:
-  - if [ -f ${DOCKER_CACHE_FILE} ]; then gunzip -c ${DOCKER_CACHE_FILE} | docker load; else docker build -t cv . fi
+  - sudo apt-get update
+  - if [ -f ${DOCKER_CACHE_FILE} ]; then gunzip -c ${DOCKER_CACHE_FILE} | docker load; fi
 
 script:
 - docker run -it -v ${PWD}:/cv cv
