@@ -7,10 +7,7 @@ else
     echo "No current tag. Make a tag"
     git config --local user.name 'travis'
     git config --local user.email 'travis'
-    DATE=$(date +"%Y%m%d")
-
-    git tag -a v$(date +"%Y%m%dT%H%M%S")-${TRAVIS_BUILD_NUMBER} -m "Travis build $TRAVIS_BUILD_NUMBER pushed a tag"
-
+    git tag -a $(date +"%Y-%m-%d")-${TRAVIS_BUILD_NUMBER} -m "Travis build $TRAVIS_BUILD_NUMBER pushed a tag"
     echo "Done making a tag"
 fi
 
@@ -21,7 +18,7 @@ fi
 # rm tex/*.aux
 # cp -rt ./thesis-gwu figures tex LICENSE.md README.md thesis-bib.bib thesis-gwu.cls thesis-sample.pdf thesis-sample.tex
 
-# zip -r9 thesis-gwu.zip  thesis-gwu 
+# zip -r9 thesis-gwu.zip  thesis-gwu
 
 # Can use ctan-o-mat to automatticaly deploy
 # modify thesis-gwu.pkg version number and anything else
