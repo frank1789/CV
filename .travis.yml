@@ -5,11 +5,11 @@ service:
 
 cache:
   directories:
-  - docker
+  - /home/travis/docker/
 
 env:
   global:
-    - DOCKER_CACHE_FILE=${PWD}/docker/cache.tar.gz
+    - DOCKER_CACHE_FILE=/home/travis/docker/cache.tar.gz
 
 before_install:
   - if [ -f ${DOCKER_CACHE_FILE} ]; then gunzip -c ${DOCKER_CACHE_FILE} | docker load; fi
