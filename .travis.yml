@@ -13,7 +13,7 @@ env:
 
 before_install:
   - if [ -f ${DOCKER_CACHE_FILE} ]; then gunzip -c ${DOCKER_CACHE_FILE} | docker load; fi
-  - docker build -t cv .
+  #- docker build -t cv .
 
 script:
 - docker run -it -v ${PWD}:/cv cv
