@@ -15,7 +15,7 @@ env:
 
 before_install:
   - sudo apt-get update
-  - if [ -f ${DOCKER_CACHE_FILE} ]; then gunzip -c ${DOCKER_CACHE_FILE} | docker load; fi
+  - else docker build -t cv .
 
 script:
 - docker run -it -v ${PWD}:/cv cv
