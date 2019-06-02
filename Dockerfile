@@ -1,5 +1,5 @@
 FROM ubuntu:19.10
-MAINTAINER Francesco francesco.argentieri89@gmail.com
+LABEL Francesco francesco.argentieri89@gmail.com
 ENV DEBIAN_FRONTEND noninteractive
 
 ENV DIR /cv
