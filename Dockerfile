@@ -1,4 +1,5 @@
 FROM ubuntu:19.10
+MAINTAINER Francesco francesco.argentieri89@gmail.com
 ENV DEBIAN_FRONTEND noninteractive
 
 ENV DIR /cv
@@ -6,10 +7,10 @@ ENV DIR /cv
 RUN apt-get -qy update && \
     apt-get upgrade -qy && \
     apt-get install -qy --no-install-recommends git \
-	make \
-	wget \
+    make \
+    wget \
     curl \
-	fonts-roboto \
+    fonts-roboto \
     fonts-font-awesome \
     unzip \
     texlive-full \
