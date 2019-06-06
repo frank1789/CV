@@ -24,6 +24,8 @@ RUN apt-get -qy update && \
     rm -rf /var/lib/apt/lists/* && \
     apt-get clean
 
+RUN tlmgr update --self --all --reinstall-forcibly-removed
+
 WORKDIR ${DIR}
 
 ENTRYPOINT ["/bin/bash", "-c", "make", "-f", "Makefile"]
