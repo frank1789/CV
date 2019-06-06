@@ -33,3 +33,6 @@ deploy:
   skip_cleanup: true
   on:
     repo: frank1789/CV
+
+notifications:
+  email: change
