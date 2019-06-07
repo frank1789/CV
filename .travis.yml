@@ -1,11 +1,15 @@
 sudo: required
 language: generic
 
+addons:
+  apt:
+    packages:
+      - docker-ce
+
 service:
 - docker
 
 cache:
-  bundler: true
   directories:
   - /home/travis/docker/
 
@@ -35,4 +39,5 @@ deploy:
     repo: frank1789/CV
 
 notifications:
-  email: change
+  email:
+    on_succes: always
