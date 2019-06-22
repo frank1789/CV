@@ -24,10 +24,6 @@ RUN apt-get -qy update && \
     rm -rf /var/lib/apt/lists/* && \
     apt-get clean
 
-RUN pip3 install dropbox
-
 WORKDIR ${DIR}
-
-COPY ./upload_file.py ${DIR}}
 
 ENTRYPOINT ["/bin/bash", "-c", "make", "-f", "Makefile"]
