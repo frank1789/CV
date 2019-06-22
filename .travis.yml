@@ -30,7 +30,7 @@ script:
 
 after_success:
 - bash deploy.sh
-- python3 upload_file.py $DROPBOX_TOKEN FrancescoArgentieri-Resume.pdf ./
+- python3 upload_file.py $DROPBOX_TOKEN FrancescoArgentieri-Resume.pdf /FrancescoArgentieri-Resume.pdf
 
 deploy:
   provider: releases
