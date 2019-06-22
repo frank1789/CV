@@ -17,7 +17,7 @@ class TransferData:
         dbx = dropbox.Dropbox(self.access_token)
 
         with open(source, 'rb') as f:
-            dbx.files_upload(f.read(), destination)
+            dbx.files_upload(f.read(), destination, mode=dropbox.files.WriteMode.overwrite)
 
 
 def parse():
