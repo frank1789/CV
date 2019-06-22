@@ -25,4 +25,4 @@ build:
 	@echo "${green}Complete${end}"
 
 clean:
-	rm -rf *.aux *.fdb_latexmk *.fls *.log *.out *.synctex.gz *.toc *.back
+	rm -rf *.aux *.fdb_latexmk *.fls *.log *.out *.synctex.gz *.toc *.back *.bcf *.xml
