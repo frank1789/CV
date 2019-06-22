@@ -1,5 +1,7 @@
 sudo: required
-language: generic
+language: python
+python:
+    - "3.6"
 
 addons:
   apt:
@@ -19,6 +21,7 @@ env:
 
 before_install:
   - sudo apt-get update
+  - pip3 install dropbox
   - docker build -t cv .
 
 script:
@@ -27,6 +30,7 @@ script:
 
 after_success:
 - bash deploy.sh
+- python3 upload_file.py $DROPBOX_TOKEN FrancescoArgentieri-Resume.pdf /FrancescoArgentieri-Resume.pdf
 
 deploy:
   provider: releases
