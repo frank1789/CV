@@ -39,10 +39,14 @@ def parse():
 def main():
         data = parse()
         transferData = TransferData(data.token_access)
-        # extrac data from parse
+        # extract data from parse
+        print(data.file)
         file_from = data.file
         # The full path to upload the file to, including the file name
-        file_to = '/' + data.destination + file_from
+        if data.destination is not None:
+            file_to = "/" + data.destination + file_from
+        else:
+            file_to = "/" + file_from
         # API v2
         transferData.upload_file(file_from, file_to)
 
