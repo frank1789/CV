@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import sys
 import argparse
 import dropbox
 
@@ -21,23 +22,30 @@ class TransferData:
 
 
 def parse():
-    parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter, description="Upload file to Dropbox")
+    parser = argparse.ArgumentParser(
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter,
+        description="Upload file to Dropbox",
+        add_help=True)
     parser.add_argument("token_access",  type=str, help="Token access")
     parser.add_argument("file",  type=str, help="File to upload", action="store")
-    parser.add_argument("destination",  type=str,  help="Full path to upload the file to, including the file name", action="store")
+    parser.add_argument("--destination",
+        type=str,
+        help="optional full path where upload file, without file-name",
+        action="store")
     args = parser.parse_args()
     return args
 
 
 def main():
-    data = parse()
-    transferData = TransferData(data.token_access)
+        data = parse()
+        transferData = TransferData(data.token_access)
+        # extrac data from parse
+        file_from = data.file
+        # The full path to upload the file to, including the file name
+        file_to = '/' + data.destination + file_from
+        # API v2
+        transferData.upload_file(file_from, file_to)
 
-    file_from = 'test.txt'
-    file_to = '/test_dropbox/test.txt'  # The full path to upload the file to, including the file name
-
-    # API v2
-    transferData.upload_file(data.file, data.destination)
 
 if __name__ == '__main__':
     main()

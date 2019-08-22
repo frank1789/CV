@@ -1,10 +1,10 @@
 FROM ubuntu:19.10
-LABEL Francesco francesco.argentieri89@gmail.com
+LABEL version="0.1.0" maintaner="Francesco Argentieri <francesco.argentieri89@gmail.com>"
 ENV DEBIAN_FRONTEND noninteractive
 
 ENV DIR /cv
 
-RUN apt-get -qy update && \
+RUN apt-get update -qy && \
     apt-get upgrade -qy && \
     apt-get install -qy --no-install-recommends git \
     make \
