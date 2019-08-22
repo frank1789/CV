@@ -2,7 +2,7 @@ CC    = xelatex
 BB    = biber
 FLAGS = -shell-escape -halt-on-error -interaction=batchmode
 CV   = FrancescoArgentieri-Resume.tex
-CL   = example-cover-letter.tex
+CL   = #modelling_eng-cover-letter.tex
 BIB   = $(wildcard *.bib)
 
 blue   = \033[0;34m
@@ -10,7 +10,7 @@ yellow = \033[0;33m
 green  = \033[0;32m
 end    = \033[0m
 
-all: letter resume clean
+all: resume clean
 
 resume:
 	@echo "${blue}----------------------------------${end}"
