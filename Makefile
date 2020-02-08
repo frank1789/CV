@@ -1,16 +1,20 @@
-CC    = xelatex
-BB    = biber
-FLAGS = -shell-escape -halt-on-error -interaction=batchmode
-CV   = FrancescoArgentieri-Resume.tex
-CL   = #modelling_eng-cover-letter.tex
-BIB   = $(wildcard *.bib)
+#!usr/bin/sh
 
-blue   = \033[0;34m
-yellow = \033[0;33m
-green  = \033[0;32m
-end    = \033[0m
+CC    := xelatex
+BB    := biber
+FLAGS := -shell-escape -halt-on-error -interaction=batchmode
+CV    := FrancescoArgentieri-Resume.tex
+CL    := #modelling_eng-cover-letter.tex
+BIB   := $(wildcard *.bib)
 
-all: resume clean
+# color definition
+blue   := \033[0;34m
+yellow := \033[0;33m
+green  := \033[0;32m
+end    := \033[0m
+
+.PHONY: clean resume
+all: clean resume
 
 resume:
 	@echo "${blue}----------------------------------${end}"
@@ -41,4 +45,5 @@ letter:
 
 
 clean:
+	@echo "clean..."
 	rm -rf *.aux *.fdb_latexmk *.fls *.log *.out *.synctex.gz *.toc *.back *.bcf *.xml
