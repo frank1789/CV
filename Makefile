@@ -21,11 +21,8 @@ resume:
 	@echo "${blue}===== Build xelatex document =====${end}"
 	@echo "${blue}----------------------------------${end}"
 	@echo
-	@echo "${yellow}compling... x1${end}"
 	${CC} ${FLAGS} ${CV}
-	@echo "${yellow}compling... x2${end}"
 	${CC} ${FLAGS} ${CV}
-	@echo "${yellow}compling... x3${end}"
 	${CC} ${FLAGS} ${CV}
 	@echo "${green}Complete${end}"
 
