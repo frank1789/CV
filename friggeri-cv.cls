@@ -7,10 +7,11 @@
 }
 \ProcessOptions\relax
 \LoadClass{article}
-
+\usepackage[utf8]{inputenc}
 \usepackage{csquotes}
 \usepackage{multicol}
 \usepackage{tabularx}
+
 
 %%%%%%%%%%
 % Colors %
@@ -157,6 +158,7 @@
   \end{tabular*}
 }
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
+
 \newcommand{\entrytitle}[6]{%
   \parbox[t]{11.5cm}{%
     \begin{tabular}{l c r p{2mm} l r}
@@ -189,6 +191,7 @@
   }
   \vspace{3.5mm}
 }
+
 %%%%%%%%%%%%%%
 % Side block %
 %%%%%%%%%%%%%%
