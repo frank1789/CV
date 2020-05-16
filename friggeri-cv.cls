@@ -8,6 +8,9 @@
 \ProcessOptions\relax
 \LoadClass{article}
 
+\usepackage{csquotes}
+\usepackage{multicol}
+\usepackage{tabularx}
 
 %%%%%%%%%%
 % Colors %
@@ -154,15 +157,38 @@
   \end{tabular*}
 }
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
-\newcommand{\entry}[4]{%
-  #1&\parbox[t]{11.5cm}{%
-    \textbf{#2}%
-    \hfill%
-    {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
-    #4\vspace{\parsep}%
-  }\\\linebreak}
+\newcommand{\entrytitle}[6]{%
+  \parbox[t]{11.5cm}{%
+    \begin{tabular}{l c r p{2mm} l r}
+      #1  & -- & #2 & \hfill & \textbf{#3}\hfill & {\footnotesize\addfontfeature{Color=lightgray} #4} \\
+          &    &    & \hfill & \multicolumn{2}{p{125mm}}{#5}\\
+          &    &    & \hfill & \multicolumn{2}{l}{#6}
+    \end{tabular}
+  }
+  \vspace{3.5mm}\\
+}
 
+\newcommand{\entry}[8]{%
+  \parbox[t]{11.5cm}{%
+    \begin{tabular}{l c r p{2mm} l r}
+      #1  & -- & #2 & \hfill & \textbf{#3}\hfill & {\footnotesize\addfontfeature{Color=lightgray} #4} \\
+          &    &    & \hfill & \multicolumn{2}{p{110mm}}{#5}\\
+          &    &    & \hfill & \multicolumn{2}{p{110mm}}{#6}\\
+          &    &    & \hfill & \multicolumn{1}{p{90mm}}{#7} & \multicolumn{1}{r}{#8}\\
+    \end{tabular}
+  }
+  \vspace{3.5mm}\\
+}
 
+\newcommand{\entrycertificate}[3]{%
+  \parbox[t]{11.5cm}{%
+    \begin{tabularx}{\textwidth}{p{9.25mm} p{110mm} r}
+      #1  & \textbf{#2} \\
+          & {\footnotesize\addfontfeature{Color=lightgray} #3}
+    \end{tabularx}%
+  }
+  \vspace{3.5mm}
+}
 %%%%%%%%%%%%%%
 % Side block %
 %%%%%%%%%%%%%%
