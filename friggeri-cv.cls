@@ -169,7 +169,7 @@
           &    &    & \hfill & \multicolumn{2}{l}{#6}
     \end{tabular}
   }
-  \vspace{3.5mm}\\
+  \vspace{2.5mm}\\
 }
 
 %
@@ -184,7 +184,7 @@
           &    &    & \hfill & \multicolumn{1}{p{90mm}}{#7} & \multicolumn{1}{r}{#8}\\
     \end{tabular}
   }
-  \vspace{3.5mm}\\
+  \vspace{1.5mm}\\
 }
 
 %
@@ -196,7 +196,7 @@
           & {\footnotesize\addfontfeature{Color=lightgray} #3}
     \end{tabularx}%
   }
-  \vspace{3.5mm}
+  \vspace{1.5mm}\\
 }
 
 %
