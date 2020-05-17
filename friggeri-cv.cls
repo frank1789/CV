@@ -159,6 +159,8 @@
 }
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
 
+%
+%
 \newcommand{\entrytitle}[6]{%
   \parbox[t]{11.5cm}{%
     \begin{tabular}{l c r p{2mm} l r}
@@ -170,6 +172,9 @@
   \vspace{3.5mm}\\
 }
 
+%
+%
+%
 \newcommand{\entry}[8]{%
   \parbox[t]{11.5cm}{%
     \begin{tabular}{l c r p{2mm} l r}
@@ -182,6 +187,8 @@
   \vspace{3.5mm}\\
 }
 
+%
+%
 \newcommand{\entrycertificate}[3]{%
   \parbox[t]{11.5cm}{%
     \begin{tabularx}{\textwidth}{p{9.25mm} p{110mm} r}
@@ -190,6 +197,19 @@
     \end{tabularx}%
   }
   \vspace{3.5mm}
+}
+
+%
+%
+\newcommand{\entryskills}[2]{%
+  \parbox[t]{57.5mm}{%
+    \begin{tabular}{r l}
+      \textbf{#1} & \hfill\\
+                  & \multicolumn{1}{p{50mm}}{#2}\hfill\\
+    \end{tabular}%
+  }
+  \vspace{1.5mm}
+  \hspace{15.5mm}
 }
 
 %%%%%%%%%%%%%%
