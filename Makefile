@@ -17,17 +17,7 @@ end    := \033[0m
 all: clean resume
 
 resume:
-	@echo "${blue}----------------------------------${end}"
-	@echo "${blue}===== Build xelatex document =====${end}"
-	@echo "${blue}----------------------------------${end}"
-	@echo
-	@echo "${yellow}compling... x1${end}"
-	${CC} ${FLAGS} ${CV}
-	@echo "${yellow}compling... x2${end}"
-	${CC} ${FLAGS} ${CV}
-	@echo "${yellow}compling... x3${end}"
-	${CC} ${FLAGS} ${CV}
-	@echo "${green}Complete${end}"
+	python3 resume.py
 
 
 letter:
@@ -45,5 +35,5 @@ letter:
 
 
 clean:
-	@echo "clean..."
-	rm -rf *.aux *.fdb_latexmk *.fls *.log *.out *.synctex.gz *.toc *.back *.bcf *.xml
+	@echo "clean old build"
+	rm -rf build
