@@ -1,0 +1,239 @@
+%
+% Friggeri Resume/CV
+% XeLaTeX Template
+% Version 1.2 (3/5/15)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%
+%
+
+% Add 'print' as an option into the square bracket to remove colors from this template for printing
+\documentclass[a4,oneside]{friggeri-cv}
+\usepackage[utf8]{inputenc}
+\usepackage[italian, english]{babel}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\definecolor{linkedin}{HTML}{1683BB}
+\definecolor{skypeblue}{RGB}{0,175,240}
+\definecolor{phonegreen}{HTML}{006B3C}
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=false,
+  pdfborder={0 0 0},
+}
+
+\newcommand{\LinkedinColour}{{\color{linkedin} \faLinkedin}}
+\newcommand{\Email}{{\color{black} \faEnvelope \,}}
+\newcommand{\Skype}{{\color{skypeblue} \faSkype}}
+\newcommand{\Phone}{{\color{phonegreen} \faPhone}}
+
+% note without number reference
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+% Specify the bibliography file to include publications
+\addbibresource{bibliography.bib}
+
+\begin{document}
+  % Your name and current job title/field
+  \header{\VAR{name}}{\VAR{surname}}{\VAR{title}}
+
+%-------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%-------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+  \section{contact}
+  ~
+  \VAR{address}
+  \VAR{city} (\VAR{province}), \VAR{zip}
+  \VAR{country}
+  ~
+  \Phone \, \VAR{phone}
+  ~
+  \Email \, \href{mailto:\VAR{email}}{francesco.argentieri89\\@gmail.com}
+  ~
+  \LinkedinColour \, \href{\VAR{linkedin}}{\VAR{name} \VAR{surname}}
+  \Skype \, \href{skype:my_username?add}{francesco\_argentieri}
+  \section{languages}
+  \BLOCK{ for l in languages }
+    \VAR{l["language"]}--\VAR{l["level"]}
+  \BLOCK{ endfor }
+\end{aside}
+
+%-------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%-------------------------------------------------------------------------------
+
+\section{education}
+  \begin{entrylist}
+
+  \BLOCK{ for edu in education }
+
+    \entrytitle
+    {\VAR{edu["start"]}}
+    {\VAR{edu["end"]}}
+    {\VAR{edu["grade"]} {\normalfont in \VAR{edu["title"]}}}
+    {\VAR{edu["university"]}}
+    {Thesis "\emph{\VAR{edu["thesis"]}}".}
+    {Specialization in \VAR{edu["specialization"]}}
+
+  \BLOCK{ endfor }
+
+  \end{entrylist}
+
+%-------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%-------------------------------------------------------------------------------
+\section{experience}
+  \begin{entrylist}
+
+  \BLOCK{ for exp in experience[0:3] }
+
+    \entry{\VAR{exp["start"]}}{\VAR{exp["end"]}}
+    {\VAR{exp["where"]}}{\VAR{exp["location"]}}
+    {\VAR{exp["role"]} "\emph{\VAR{exp["title"]}}".}
+    {\VAR{exp["description"]}}
+    {\textbf{sofware:} \VAR{exp["software"]}}
+    {\href{\VAR{exp["link"]}}{\faGithub}}
+
+  \BLOCK{ endfor }
+
+  \end{entrylist}
+
+  \begin{entrylist}
+
+  \BLOCK{ for exp in experience [3:]}
+
+    \entry{\VAR{exp["start"]}}{\VAR{exp["end"]}}
+    {\VAR{exp["where"]}}{\VAR{exp["location"]}}
+    {\VAR{exp["role"]} "\emph{\VAR{exp["title"]}}".}
+    {\VAR{exp["description"]}}
+    {\textbf{sofware:} \VAR{exp["software"]}}
+    {\href{\VAR{exp["link"]}}{\faGithub}}
+
+  \BLOCK{ endfor }
+
+  \end{entrylist}
+
+%-------------------------------------------------------------------------------
+%	SKILLS SECTION
+%-------------------------------------------------------------------------------
+\section{skills}
+  \begin{entrylist}
+
+\BLOCK{ for s in skills }
+\BLOCK{if loop.index % 2 }
+    \entryskills{\VAR{s[0]}}{\VAR{s[1]}}
+\BLOCK{ else: }
+    \entryskills{\VAR{s[0]}}{\VAR{s[1]}}\\
+\BLOCK{ endif }
+\BLOCK{ endfor }
+
+  \end{entrylist}
+
+%-------------------------------------------------------------------------------
+%	AWARDS SECTION
+%-------------------------------------------------------------------------------
+
+%\section{awards}
+%
+%\begin{entrylist}
+%
+%------------------------------------------------
+%
+%\entry
+%{2015--2015}
+%{Postgraduate Scholarship}
+%{School of Business, The University of California}
+%{Awarded to the top student in their final year of a Bachelors degree. Mastered the art of filing accurate TPS reports.}
+%
+%------------------------------------------------
+%\end{entrylist}
+
+%-------------------------------------------------------------------------------
+%	CERTIFICATION SECTION
+%-------------------------------------------------------------------------------
+\section{certification}
+  \begin{entrylist}
+
+\BLOCK{ for c in certificate}
+\BLOCK{ if c["link"] != None }
+    \entrycertificate{\VAR{c["year"]}}{\href{\VAR{c["link"]}}{\VAR{c["subject"]}}}{\VAR{c["entity"]}}
+\BLOCK{else}
+    \entrycertificate{\VAR{c["year"]}}{\VAR{c["subject"]}}}{\VAR{c["entity"]}}
+\BLOCK{ endif }
+\BLOCK{ endfor }
+
+  \end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{communication skills}
+%\begin{entrylist}
+%
+%------------------------------------------------
+%
+%
+%\end{entrylist}
+
+%-------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%-------------------------------------------------------------------------------
+
+%\section{interests}
+
+%\textbf{professional:} automotive, design, robotic, R\&D, physics, space, aeronautics, IT   \textbf{personal:} cinema, cooking, sport, health and wellness, science and technology
+
+\section{driver's license B}
+
+%-------------------------------------------------------------------------------
+%	PUBLICATIONS SECTION
+%-------------------------------------------------------------------------------
+
+%\section{publications}
+%
+%\printbibsection{article}{article in peer-reviewed journal} % Print all articles from the bibliography
+%
+%\printbibsection{book}{books} % Print all books from the bibliography
+%
+%\begin{refsection} % This is a custom heading for those references marked as "inproceedings" but not containing "keyword=france"
+%\nocite{*}
+%\printbibliography[sorting=chronological, type=inproceedings, title={international peer-reviewed conferences/proceedings}, notkeyword={france}, heading=bibheading]
+%\end{refsection}
+%
+%\begin{refsection} % This is a custom heading for those references marked as "inproceedings" and containing "keyword=france"
+%\nocite{*}
+%\printbibliography[sorting=chronological, type=inproceedings, title={local peer-reviewed conferences/proceedings}, keyword={france}, heading=bibheading]
+%\end{refsection}
+%
+%\printbibsection{misc}{other publications} % Print all miscellaneous entries from the bibliography
+%
+%\printbibsection{report}{research reports} % Print all research reports from the bibliography
+%
+%----------------------------------------------------------------------------------------
+\blfootnote{“In compliance with the GDPR and Italian Legislative Decree no. 196
+dated 30/06/2003, I hereby authorize the recipient of this document to use and
+process my personal details for the purpose of recruiting and selecting staff
+and I confirm to be informed of my rights in accordance to art. 7 of the above
+mentioned Decree”.\\\\
+\today}
+\end{document}
