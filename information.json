@@ -1,0 +1,168 @@
+{
+	"data": {
+		"name": "Francesco",
+		"surname": "Argentieri",
+		"title": "junior Mechatronics Engineer",
+		"contact": {
+			"address": "Circonvallazione Istoniense, 20",
+			"city": "Vasto",
+			"province": "CH",
+			"zip": 66054,
+			"country": "Italy",
+			"phone": "+39 334 273 4061"
+		},
+		"social": {
+			"e-mail": "francesco.argentieri89@gmail.com",
+			"linkedin": "https://it.linkedin.com/in/francesco-argentieri",
+			"skype": "francesco_argentieri",
+			"github": ""
+		},
+		"education": [
+			{
+				"start": 2015,
+				"end": 2020,
+				"grade": "M. Sc.",
+				"university": "University of Trento",
+				"title": "Mechatronics Engineering",
+				"thesis": "Enhancing UAV capabilities with machine learning on board",
+				"specialization": "Mechanics--Mechatronics"
+			},
+			{
+				"start": 2008,
+				"end": 2015,
+				"grade": "Bachelor",
+				"university" : "Marche Polytechnic University",
+				"title": "Mechanics Engineering",
+				"thesis": "Structural analysis of an automotive hot formed sheet component with variable thickness",
+				"specialization": "Energy--Thermomechanical"
+			}
+		],
+		"languages": [
+			{
+				"language": "Italian",
+				"level": "mother tongue"
+			},
+			{
+				"language": "English",
+				"level": "upper intermediate"
+			}
+		]
+	},
+	"experience": [
+		{
+			"title": "Enhancing UAV capabilities with machine learning on board",
+			"where": "University of Trento",
+			"location": "Trento, Italy",
+			"role": "Thesis",
+			"start": "04/2019",
+			"end": "03/2020",
+			"description": "This project focuses on the activity of providing the drone's ability to take advantage of the detection and classification of objects with TensorFlow Lite. The whole system is run on ARM cortex-A53 and TPU processors for tensor calculation, the project uses Raspberry Pi3b and Coral Dev-Board.",
+			"software": "Python, Tensorflow, Altair PBS (HPC), C++/Qt",
+			"link": "https://github.com/frank1789/MasterThesis"
+		},
+		{
+			"title": "Rapid development CNN for image classification using fine-tuning techniques and implementation on SoC systems",
+			"where": "University of Trento",
+			"location": "Trento, Italy",
+			"role": "",
+			"start": "09/2018",
+			"end": "11/2018",
+			"description": "Using framework like Keras is possible to develop refinement techniques starting from already known models. Using architecture of a USB commercial device, Intel Movidius neural compute stick, with low power consumption for neural network execution on SoC systems such as Raspberry.",
+			"software": "Python, Keras, Tensorflow, Altair PBS (HPC)",
+			"link": "https://github.com/frank1789/NeuralNetworks"
+		},
+		{
+			"title": "Distributed robots mapping exploration",
+			"where": "University of Trento",
+			"location": "Trento, Italy",
+			"role": "",
+			"start": "09/2017",
+			"end": "06/2018",
+			"description": "Project for the final exam where we consider the problem of exploring an environment unknown with a team of robots. As in the exploration of single robots, the goal is to minimize the overall exploration time. The key problem to solve in the context of multiple robots is that of choose the appropriate destination points for the individual robots so that can explore different regions of the environment simultaneously.",
+			"software": "Matlab, mex, C++, LaTeX",
+			"link": "https://github.com/frank1789/DistributedSystemProject"
+		},
+		{
+			"title": "Helicopter's tail-boom and rotor vibration analysis",
+			"where": "University of Trento",
+			"location": "Trento, Italy",
+			"role": "",
+			"start": "05/2017",
+			"end": "08/2017",
+			"description": "This work performed during the master course of Modelling and Design with Finite Elements, for the part about the course project. The purpose is to present a consistent finite-element formulation, developed to predict the free vibration characteristics of two different helicopters tail-boom structures.",
+			"software": "Ansys Mechanical (APDL), LaTeX",
+			"link": "https://github.com/frank1789/FEM-Analysis---Helicopter-s-Tail"
+		},
+		{
+			"title": "Structural analysis of an automotive hot formed sheet component with variable thickness",
+			"where": "DIISM, Marche Polytechnic University",
+			"location": "Ancona, Italy",
+			"role": "Intership",
+			"start": "02/2015",
+			"end": "06/2015",
+			"description": "In field of machine design developed a thesis during which I have developed the ability to set and solve problems through the FEM simulations. The first part was compare the component with variable thickness, verify its response to static stresses respect a previous study where the same component had constant thickness.  The second part of the work was characterized by research a method to interface and study the molding's result simulated in Ls-Dyna. Results obtained from the various simulations were compared, illustrating the advantages and disadvantages encountered during development.",
+			"software": "Ansys Mechanical, Altair  HyperMesh, LsDyna, Qt, LaTeX",
+			"link": "https://github.com/frank1789/LsDynaToAPDL"
+		}
+	],
+	"skillset": [
+		{
+			"skill": "Programming",
+			"type": [
+				"C++",
+				"C",
+				"Qt",
+				"Python",
+				"Ruby",
+				"R"
+			]
+		},
+		{
+			"skill": "Software",
+			"type": [
+				"Microsoft Office",
+				"Visual Studio Code"
+			]
+		},
+		{
+			"skill": "Package",
+			"type": [
+				"Matlab", "Simulink",
+				"Maple",
+				"Ansys",
+				"SolidWorks",
+				"HyperWorks"
+			]
+		},
+		{
+			"skill": "Other",
+			"type": [
+				"Internet networking",
+				"Arduino",
+				"Raspberry Pi"
+			]
+		},
+		{
+			"skill": "OS",
+			"type": [
+				"MacOS",
+				"Linux",
+				"Windows"
+			]
+		}
+	],
+	"certificate": [
+		{
+			"year": 2018,
+			"subject": "Safety in the laboratory",
+			"entity": "University of Trento",
+			"link": "https://bestr.it/award/show/657869a076ba7246b8667f9b2c26d9686d70e8be?ln=it"
+		},
+		{
+			"year": 2015,
+			"subject": "Council of Europe Level B1 (PET)",
+			"entity": "Cambridge English, University of Cambridge",
+			"link": ""
+		}
+	]
+}
