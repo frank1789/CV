@@ -21,7 +21,7 @@ env:
 
 before_install:
   - sudo apt-get update
-  - pip3 install --user dropbox
+  - pip3 install dropbox
   - docker build -t cv .
 
 script:
