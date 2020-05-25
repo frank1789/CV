@@ -17,24 +17,29 @@
 % Colors %
 %%%%%%%%%%
 
-\usepackage{fontawesome5}
-
+\RequirePackage{fontawesome5}
 \RequirePackage{xcolor}
 
-\definecolor{white}{RGB}{255,255,255}
-
-\definecolor{darkgray}{HTML}{333333}
-\definecolor{gray}{HTML}{4D4D4D}
-\definecolor{lightgray}{HTML}{999999}
-
-\definecolor{green}{HTML}{C2E15F}
-\definecolor{orange}{HTML}{FDA333}
-\definecolor{purple}{HTML}{D3A4F9}
-\definecolor{red}{HTML}{FB4485}
-\definecolor{blue}{HTML}{6CE0F1}
+% Defines the colors used for the template scheme and for assigning color to
+% FontAwesome characters
 \definecolor{airforceblue}{rgb}{0.36, 0.54, 0.66}
 \definecolor{bananayellow}{rgb}{1.0, 0.88, 0.21}
+\definecolor{blue}{HTML}{6CE0F1}
+\definecolor{darkgray}{HTML}{333333}
+\definecolor{gray}{HTML}{4D4D4D}
+\definecolor{green}{HTML}{C2E15F}
+\definecolor{lightgray}{HTML}{999999}
+\definecolor{linkedin}{HTML}{1683BB}
+\definecolor{orange}{HTML}{FDA333}
+\definecolor{phonegreen}{HTML}{006B3C}
+\definecolor{purple}{HTML}{D3A4F9}
+\definecolor{red}{HTML}{FB4485}
+\definecolor{skypeblue}{RGB}{0,175,240}
+\definecolor{white}{RGB}{255,255,255}
+\definecolor{cyan-vimeo}{RGB}{77,170,233}
 
+% Function that defines the color cycle for the first three letters of the
+% section
 \ifdefined\@cv@print
   \colorlet{green}{gray}
   \colorlet{orange}{gray}
@@ -54,21 +59,18 @@
 %%%%%%%%%
 % Fonts %
 %%%%%%%%%
+
 \RequirePackage{fontspec}
 \RequirePackage{unicode-math}
-\RequirePackage{fontawesome5}
 \RequirePackage{calc}
+\RequirePackage{stackengine}
 
-
+% set-up fonts 
 \newfontfamily\bodyfont[]{Roboto}
 \newfontfamily\thinfont[]{Roboto Light}
 \newfontfamily\headingfont[]{Roboto Bold}
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont[Mapping=tex-text, Color=textcolor]{Roboto Light}
-\usepackage{stackengine}
-% %\setmathfont{XITS Math}
-
-
 
 %%%%%%%%%%
 % Header %
@@ -102,6 +104,7 @@
 %%%%%%%%%%%%%
 % Structure %
 %%%%%%%%%%%%%
+
 \RequirePackage{parskip}
 
 \newcounter{colorCounter}
@@ -159,7 +162,26 @@
 }
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
 
-%
+% entrytitle command is useful for entering your academic qualifications
+% within the education section. Compared to the original version, this
+% function builds a table with the data entered; this allows to obtain a
+% better alignment with the entered values.
+% Args: 
+%    #1 start date
+%    #2 end date
+%    #3 course title
+%    #4 univeristy
+%    #5 thesis
+%    #6 other
+% 
+% % example:
+%     \entrytitle
+%     {2015}
+%     {2020}
+%     {M. Sc. {\normalfont in Mechatronics Engineering}}
+%     {University of Trento}
+%     {Thesis "\emph{Enhancing UAV capabilities with machine learning on board}".}
+%     {Specialization in Mechanics--Mechatronics}
 %
 \newcommand{\entrytitle}[6]{%
   \parbox[t]{11.5cm}{%
@@ -172,9 +194,19 @@
   \vspace{2.5mm}\\
 }
 
+% entry command to enter the experiences gained.
 %
-%
-%
+% example:
+%   \entry
+%     #1 {start date}
+%     #2 {end date }
+%     #3 {company name}{city, country}
+%     #4 {job title}
+%     #5 {long descritpion}
+%     #6 {aux field}
+%     #7 {link}
+%     #8 {logo}
+% 
 \newcommand{\entry}[8]{%
   \parbox[t]{11.5cm}{%
     \begin{tabular}{l c r p{2mm} l r}
@@ -187,7 +219,13 @@
   \vspace{1.5mm}\\
 }
 
+% entrycertificate command to enter the certificates gained.
 %
+% example:
+%   \entry
+%     #1 {date}
+%     #2 {certification}
+%     #3 {company name}
 %
 \newcommand{\entrycertificate}[3]{%
   \parbox[t]{11.5cm}{%
@@ -199,7 +237,12 @@
   \vspace{1.5mm}\\
 }
 
+% entry command to enter the skills gained.
 %
+% example:
+%   \entry
+%     #1 {area}
+%     #2 {skill list}
 %
 \newcommand{\entryskills}[2]{%
   \parbox[t]{57.5mm}{%
