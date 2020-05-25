@@ -21,11 +21,11 @@ env:
 
 before_install:
   - sudo apt-get update
-  - pip3 install dropbox
+  - pip3 install --user dropbox
   - docker build -t cv .
 
 script:
-- make
+- make docker-run
 - if [[ ${TRAVIS_BRANCH} == "master" ]] && [[ ${TRAVIS_PULL_REQUEST} == "false" ]]; then mkdir -p $(dirname ${DOCKER_CACHE_FILE}) ; docker save $(docker history -q ${DOCKER_REPOSITORY}:${TRAVIS_COMMIT}  | grep -v '<missing>') | gzip > ${DOCKER_CACHE_FILE}; fi
 
 after_success:
