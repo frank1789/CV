@@ -1,20 +1,40 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 
-
-import errno
-import json
 import os
-import sys
-
-sys.path.insert(0, 'curriculum')
-from curriculum.factory import setup_curriculum_vitae
+import json
+import errno
 
 
-class Registry:
+class IdentifyingFactory:
+    factories = {}
+
+    def addFactory(id, shapeFactory):
+        ShapeFactory.factories.put[id] = shapeFactory
+        addFactory = staticmethod(addFactory)
+
+    # A Template Method:
+    def createShape(id):
+        if not ShapeFactory.factories.has_key(id):
+            ShapeFactory.factories[id] = \
+                eval(id + '.Factory()')
+        return ShapeFactory.factories[id].create()
+    createShape = staticmethod(createShape)
+
+    def create_identifying(type):
+        pass
+
+
+class Identifying(object):
+    pass
+
+
+class Linkedin(Identifying):
+    pass
+
+
+
+class File(Identifying):
     def __init__(self) -> None:
         self.__data = {}
-        pass
 
     def read_from_file(self, namefile):
         if os.path.exists(namefile):
@@ -24,13 +44,13 @@ class Registry:
             raise FileNotFoundError(
                 errno.ENOENT, os.strerror(errno.ENOENT), namefile)
 
+    def write_empty_structure(self, filename) -> None:
+        print("Not Implemented yet")
+        pass
+
     @property
     def information(self) -> dict:
         return self.__data
-
-    @information.setter
-    def information(self, a):
-        self.__data = a
 
     @property
     def personal_data(self) -> dict:
@@ -52,11 +72,6 @@ class Registry:
     def certificates(self) -> list:
         return self.__data["certificate"]
 
-
-if __name__ == '__main__':
-    with open("information.json") as f:
-        data = json.load(f)
-
-    setup_curriculum_vitae("Friggeri", data, "FrancescoArgentieri-Resume.tex")
-    #setup_curriculum_vitae("europass", data, "FrancescoArgentieri-Resume-europass.tex")
-    sys.exit()
+    @information.setter
+    def data(self, a):
+        self.__data = a

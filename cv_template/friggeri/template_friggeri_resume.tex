@@ -20,14 +20,10 @@
 %
 
 % Add 'print' as an option into the square bracket to remove colors from this template for printing
-\documentclass[a4,oneside]{friggeri-cv}
+\documentclass[oneside]{friggeri-cv}
 \usepackage[utf8]{inputenc}
 \usepackage[italian, english]{babel}
 \usepackage{fontspec}
-\usepackage{xcolor}
-\definecolor{linkedin}{HTML}{1683BB}
-\definecolor{skypeblue}{RGB}{0,175,240}
-\definecolor{phonegreen}{HTML}{006B3C}
 \usepackage{hyperref}
 \hypersetup{
   colorlinks=false,
@@ -38,6 +34,7 @@
 \newcommand{\Email}{{\color{black} \faEnvelope \,}}
 \newcommand{\Skype}{{\color{skypeblue} \faSkype}}
 \newcommand{\Phone}{{\color{phonegreen} \faPhone}}
+\newcommand{\Vimeo}{{\color{cyan-vimeo} \faVimeoV}}
 
 % note without number reference
 \newcommand\blfootnote[1]{%
@@ -71,6 +68,8 @@
   ~
   \LinkedinColour \, \href{\VAR{linkedin}}{\VAR{name} \VAR{surname}}
   \Skype \, \href{skype:my_username?add}{francesco\_argentieri}
+  \href{\VAR{github}}{\faGithub}
+  \href{https://vimeo.com/421445895}{\Vimeo}
   \section{languages}
   \BLOCK{ for l in languages }
     \VAR{l["language"]}--\VAR{l["level"]}

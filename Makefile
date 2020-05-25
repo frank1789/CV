@@ -14,9 +14,16 @@ green  := \033[0;32m
 end    := \033[0m
 
 .PHONY: clean resume
-all: clean resume
+all: install clean resume
 
-resume:
+
+build:
+	docker build -t cv .
+
+docker-run:
+	docker run -it -v ${PWD}:/cv cv
+
+resume: docker-run
 	python3 resume.py
 
 

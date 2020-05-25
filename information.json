@@ -2,6 +2,8 @@
 	"data": {
 		"name": "Francesco",
 		"surname": "Argentieri",
+		"birthday": "17 January 1989",
+		"nationality": "Italian",
 		"title": "junior Mechatronics Engineer",
 		"contact": {
 			"address": "Circonvallazione Istoniense, 20",
@@ -15,7 +17,7 @@
 			"e-mail": "francesco.argentieri89@gmail.com",
 			"linkedin": "https://it.linkedin.com/in/francesco-argentieri",
 			"skype": "francesco_argentieri",
-			"github": ""
+			"github": "https://github.com/frank1789"
 		},
 		"education": [
 			{
@@ -23,6 +25,7 @@
 				"end": 2020,
 				"grade": "M. Sc.",
 				"university": "University of Trento",
+				"country" : "Italy",
 				"title": "Mechatronics Engineering",
 				"thesis": "Enhancing UAV capabilities with machine learning on board",
 				"specialization": "Mechanics--Mechatronics"
@@ -32,6 +35,7 @@
 				"end": 2015,
 				"grade": "Bachelor",
 				"university" : "Marche Polytechnic University",
+				"country" : "Italy",
 				"title": "Mechanics Engineering",
 				"thesis": "Structural analysis of an automotive hot formed sheet component with variable thickness",
 				"specialization": "Energy--Thermomechanical"
@@ -40,11 +44,13 @@
 		"languages": [
 			{
 				"language": "Italian",
-				"level": "mother tongue"
+				"level": "mother tongue",
+				"certificate" : ""
 			},
 			{
 				"language": "English",
-				"level": "upper intermediate"
+				"level": "upper intermediate",
+				"certificate" : "Council of Europe Level B1 (PET), Cambridge English - University of Cambridge"
 			}
 		]
 	},
@@ -64,7 +70,7 @@
 			"title": "Rapid development CNN for image classification using fine-tuning techniques and implementation on SoC systems",
 			"where": "University of Trento",
 			"location": "Trento, Italy",
-			"role": "",
+			"role": "univ. project",
 			"start": "09/2018",
 			"end": "11/2018",
 			"description": "Using framework like Keras is possible to develop refinement techniques starting from already known models. Using architecture of a USB commercial device, Intel Movidius neural compute stick, with low power consumption for neural network execution on SoC systems such as Raspberry.",
@@ -75,7 +81,7 @@
 			"title": "Distributed robots mapping exploration",
 			"where": "University of Trento",
 			"location": "Trento, Italy",
-			"role": "",
+			"role": "univ. project",
 			"start": "09/2017",
 			"end": "06/2018",
 			"description": "Project for the final exam where we consider the problem of exploring an environment unknown with a team of robots. As in the exploration of single robots, the goal is to minimize the overall exploration time. The key problem to solve in the context of multiple robots is that of choose the appropriate destination points for the individual robots so that can explore different regions of the environment simultaneously.",
@@ -86,7 +92,7 @@
 			"title": "Helicopter's tail-boom and rotor vibration analysis",
 			"where": "University of Trento",
 			"location": "Trento, Italy",
-			"role": "",
+			"role": "univ. project",
 			"start": "05/2017",
 			"end": "08/2017",
 			"description": "This work performed during the master course of Modelling and Design with Finite Elements, for the part about the course project. The purpose is to present a consistent finite-element formulation, developed to predict the free vibration characteristics of two different helicopters tail-boom structures.",
