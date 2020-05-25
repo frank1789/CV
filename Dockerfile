@@ -20,8 +20,15 @@ RUN apt-get update -qy && \
     texlive-xetex \
     texlive-fonts-extra \
     texlive-science \
-    texlive-latex-recommended && \
-    rm -rf /var/lib/apt/lists/* && \
+    texlive-latex-recommended \
+    python3-pip python3-dev \
+    && cd /usr/local/bin \
+    && ln -s /usr/bin/python3 python \
+    && pip3 install --upgrade pip
+
+RUN pip3 install --user jinja2 dropbox
+
+RUN rm -rf /var/lib/apt/lists/* && \
     apt-get clean
 
 WORKDIR ${DIR}
