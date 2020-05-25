@@ -14,8 +14,7 @@ green  := \033[0;32m
 end    := \033[0m
 
 .PHONY: clean resume
-all: install clean resume
-
+all: clean resume
 
 build:
 	docker build -t cv .
