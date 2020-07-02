@@ -63,7 +63,7 @@
 			"start": "06/2020",
 			"end": 	"07/2020",
 			"description": "Developing application Qt based for Automotive Grade Linux.",
-			"software": "C++/Qt, AGL (Automotive Grade Linux)",
+			"software": "C++/Qt, AGL (Automotive Grade Linux), qml",
 			"link": ""
 		},
 		{
