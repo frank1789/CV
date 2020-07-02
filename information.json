@@ -56,6 +56,17 @@
 	},
 	"experience": [
 		{
+			"title": "Embedded Software Developer",
+			"where": "Kineton",
+			"location": "Naples, Italy",
+			"role": "Intership - RND department",
+			"start": "06/2020",
+			"end": 	"07/2020",
+			"description": "Developing application Qt based for Automotive Grade Linux.",
+			"software": "C++/Qt, AGL (Automotive Grade Linux)",
+			"link": ""
+		},
+		{
 			"title": "Enhancing UAV capabilities with machine learning on board",
 			"where": "University of Trento",
 			"location": "Trento, Italy",
