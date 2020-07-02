@@ -41,5 +41,4 @@ letter:
 
 
 clean:
-	@echo "clean old build"
 	rm -rf build
