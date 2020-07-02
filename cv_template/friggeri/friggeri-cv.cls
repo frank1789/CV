@@ -216,13 +216,13 @@
           &    &    & \hfill & \multicolumn{1}{p{90mm}}{#7} & \multicolumn{1}{r}{#8}\\
     \end{tabular}
   }
-  \vspace{1.5mm}\\
+  \vspace{7.5mm}\\
 }
 
 % entrycertificate command to enter the certificates gained.
 %
 % example:
-%   \entry
+%   \entrycertificate
 %     #1 {date}
 %     #2 {certification}
 %     #3 {company name}

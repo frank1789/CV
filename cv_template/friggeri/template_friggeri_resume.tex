@@ -103,15 +103,16 @@
 \section{experience}
   \begin{entrylist}
 
-  \BLOCK{ for exp in experience[0:3] }
+  \BLOCK{ for exp in experience }
 
     \entry{\VAR{exp["start"]}}{\VAR{exp["end"]}}
     {\VAR{exp["where"]}}{\VAR{exp["location"]}}
     {\VAR{exp["role"]} "\emph{\VAR{exp["title"]}}".}
     {\VAR{exp["description"]}}
     {\textbf{sofware:} \VAR{exp["software"]}}
+    \BLOCK{ if exp["link"] != ""}
     {\href{\VAR{exp["link"]}}{\faGithub}}
-
+    \BLOCK{ endif }
   \BLOCK{ endfor }
 
   \end{entrylist}
