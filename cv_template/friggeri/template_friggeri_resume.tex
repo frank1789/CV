@@ -107,27 +107,12 @@
 
     \entry{\VAR{exp["start"]}}{\VAR{exp["end"]}}
     {\VAR{exp["where"]}}{\VAR{exp["location"]}}
-    {\VAR{exp["role"]} "\emph{\VAR{exp["title"]}}".}
+    {"\emph{\VAR{exp["title"]}}".}
     {\VAR{exp["description"]}}
-    {\textbf{sofware:} \VAR{exp["software"]}}
+    {\textbf{software:} \VAR{exp["software"]}}
     \BLOCK{ if exp["link"] != ""}
     {\href{\VAR{exp["link"]}}{\faGithub}}
     \BLOCK{ endif }
-  \BLOCK{ endfor }
-
-  \end{entrylist}
-
-  \begin{entrylist}
-
-  \BLOCK{ for exp in experience [3:]}
-
-    \entry{\VAR{exp["start"]}}{\VAR{exp["end"]}}
-    {\VAR{exp["where"]}}{\VAR{exp["location"]}}
-    {\VAR{exp["role"]} "\emph{\VAR{exp["title"]}}".}
-    {\VAR{exp["description"]}}
-    {\textbf{sofware:} \VAR{exp["software"]}}
-    {\href{\VAR{exp["link"]}}{\faGithub}}
-
   \BLOCK{ endfor }
 
   \end{entrylist}
