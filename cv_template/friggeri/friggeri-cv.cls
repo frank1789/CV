@@ -154,11 +154,13 @@
 % List environment %
 %%%%%%%%%%%%%%%%%%%%
 
+\RequirePackage{longtable}
+
 \setlength{\tabcolsep}{1pt}
 \newenvironment{entrylist}{%
-  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
+  \begin{longtable}{@{\extracolsep{\fill}}ll}
 }{%
-  \end{tabular*}
+  \end{longtable}
 }
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
 
@@ -187,11 +189,11 @@
   \parbox[t]{11.5cm}{%
     \begin{tabular}{l c r p{2mm} l r}
       #1  & -- & #2 & \hfill & \textbf{#3}\hfill & {\footnotesize\addfontfeature{Color=lightgray} #4} \\
-          &    &    & \hfill & \multicolumn{2}{p{125mm}}{#5}\\
+          &    &    & \hfill & \multicolumn{2}{p{115mm}}{#5}\\
           &    &    & \hfill & \multicolumn{2}{l}{#6}
     \end{tabular}
   }
-  \vspace{2.5mm}\\
+  \vspace{3.5mm}\\
 }
 
 % entry command to enter the experiences gained.
@@ -211,12 +213,12 @@
   \parbox[t]{11.5cm}{%
     \begin{tabular}{l c r p{2mm} l r}
       #1  & -- & #2 & \hfill & \textbf{#3}\hfill & {\footnotesize\addfontfeature{Color=lightgray} #4} \\
-          &    &    & \hfill & \multicolumn{2}{p{110mm}}{#5}\\
-          &    &    & \hfill & \multicolumn{2}{p{110mm}}{#6}\\
-          &    &    & \hfill & \multicolumn{1}{p{90mm}}{#7} & \multicolumn{1}{r}{#8}\\
+          &    &    & \hfill & \multicolumn{2}{p{100mm}}{#5}\\
+          &    &    & \hfill & \multicolumn{2}{p{100mm}}{#6}\\
+          &    &    & \hfill & \multicolumn{1}{p{85mm}}{#7} & \multicolumn{1}{r}{#8}\\
     \end{tabular}
   }
-  \vspace{7.5mm}\\
+  \vspace{2.5mm}\\
 }
 
 % entrycertificate command to enter the certificates gained.
