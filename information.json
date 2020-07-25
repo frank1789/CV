@@ -27,7 +27,7 @@
 				"university": "University of Trento",
 				"country" : "Italy",
 				"title": "Mechatronics Engineering",
-				"thesis": "Enhancing UAV capabilities with machine learning on board",
+				"thesis": "Enhancing UAV capabilities with machine learning on board.",
 				"specialization": "Mechanics--Mechatronics"
 			},
 			{
@@ -37,7 +37,7 @@
 				"university" : "Marche Polytechnic University",
 				"country" : "Italy",
 				"title": "Mechanics Engineering",
-				"thesis": "Structural analysis of an automotive hot formed sheet component with variable thickness",
+				"thesis": "Structural analysis of an automotive hot formed sheet component with variable thickness.",
 				"specialization": "Energy--Thermomechanical"
 			}
 		],
@@ -59,11 +59,11 @@
 			"title": "Embedded Software Developer",
 			"where": "Kineton",
 			"location": "Naples, Italy",
-			"role": "Intership - RND department",
+			"role": "RND Embedded Software Developer",
 			"start": "06/2020",
 			"end": 	"07/2020",
-			"description": "Developing application Qt based for Automotive Grade Linux.",
-			"software": "C++/Qt, AGL (Automotive Grade Linux)",
+			"description": "Developing application Qt/QML based for Automotive Grade Linux.",
+			"software": "C++/Qt, AGL (Automotive Grade Linux), qml",
 			"link": ""
 		},
 		{
@@ -74,7 +74,7 @@
 			"start": "04/2019",
 			"end": "03/2020",
 			"description": "This project focuses on the activity of providing the drone's ability to take advantage of the detection and classification of objects with TensorFlow Lite. The whole system is run on ARM cortex-A53 and TPU processors for tensor calculation, the project uses Raspberry Pi3b and Coral Dev-Board.",
-			"software": "Python, Tensorflow, Altair PBS (HPC), C++/Qt",
+			"software": "Python, Tensorflow, Altair PBS (HPC), C++/Qt, \\LaTeX.",
 			"link": "https://github.com/frank1789/MasterThesis"
 		},
 		{
@@ -84,8 +84,8 @@
 			"role": "univ. project",
 			"start": "09/2018",
 			"end": "11/2018",
-			"description": "Using framework like Keras is possible to develop refinement techniques starting from already known models. Using architecture of a USB commercial device, Intel Movidius neural compute stick, with low power consumption for neural network execution on SoC systems such as Raspberry.",
-			"software": "Python, Keras, Tensorflow, Altair PBS (HPC)",
+			"description": "Training CNN for binary classification by refinement techniques starting from already known models. Optimization and execution for devices low power consumption hardware such as Intel Movidius USB and Raspberry Pi 3B.",
+			"software": "Python, Keras, Tensorflow, Altair PBS (HPC), \\LaTeX",
 			"link": "https://github.com/frank1789/NeuralNetworks"
 		},
 		{
@@ -95,8 +95,8 @@
 			"role": "univ. project",
 			"start": "09/2017",
 			"end": "06/2018",
-			"description": "Project for the final exam where we consider the problem of exploring an environment unknown with a team of robots. As in the exploration of single robots, the goal is to minimize the overall exploration time. The key problem to solve in the context of multiple robots is that of choose the appropriate destination points for the individual robots so that can explore different regions of the environment simultaneously.",
-			"software": "Matlab, mex, C++, LaTeX",
+			"description": "Project where we consider the problem of exploring an environment unknown with a team of robots. The objective the goal is to minimize the overall exploration time. We using SLAM techniques based on Montecarlo to reconstruct the map using several robots at same time to map environment.",
+			"software": "Matlab, mex, C++, \\LaTeX",
 			"link": "https://github.com/frank1789/DistributedSystemProject"
 		},
 		{
@@ -106,8 +106,8 @@
 			"role": "univ. project",
 			"start": "05/2017",
 			"end": "08/2017",
-			"description": "This work performed during the master course of Modelling and Design with Finite Elements, for the part about the course project. The purpose is to present a consistent finite-element formulation, developed to predict the free vibration characteristics of two different helicopters tail-boom structures.",
-			"software": "Ansys Mechanical (APDL), LaTeX",
+			"description": "Design with Finite Elements. The purpose is to present a consistent finite-element formulation, developed to predict and analyzing free vibration characteristics of two different helicopters tail-boom structures con approccio static structural and dynamic analysis in rotor's starting phase.",
+			"software": "Ansys Mechanical (APDL), \\LaTeX",
 			"link": "https://github.com/frank1789/FEM-Analysis---Helicopter-s-Tail"
 		},
 		{
@@ -117,8 +117,8 @@
 			"role": "Intership",
 			"start": "02/2015",
 			"end": "06/2015",
-			"description": "In field of machine design developed a thesis during which I have developed the ability to set and solve problems through the FEM simulations. The first part was compare the component with variable thickness, verify its response to static stresses respect a previous study where the same component had constant thickness.  The second part of the work was characterized by research a method to interface and study the molding's result simulated in Ls-Dyna. Results obtained from the various simulations were compared, illustrating the advantages and disadvantages encountered during development.",
-			"software": "Ansys Mechanical, Altair  HyperMesh, LsDyna, Qt, LaTeX",
+			"description": "Developing approaches to study automotive components hot formed with variable thickness by FEM analysis. The purpose was compare the component with variable thickness, verify its response to static stresses respect a previous study where the same component had constant thickness.",
+			"software": "Ansys Mechanical, Altair  HyperMesh, LsDyna, Qt, \\LaTeX",
 			"link": "https://github.com/frank1789/LsDynaToAPDL"
 		}
 	],
@@ -156,7 +156,8 @@
 			"type": [
 				"Internet networking",
 				"Arduino",
-				"Raspberry Pi"
+				"Raspberry Pi",
+				"\\LaTeX"
 			]
 		},
 		{
