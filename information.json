@@ -4,7 +4,7 @@
 		"surname": "Argentieri",
 		"birthday": "17 January 1989",
 		"nationality": "Italian",
-		"title": "junior Mechatronics Engineer",
+		"title": "Mechatronic Engineer",
 		"contact": {
 			"address": "Circonvallazione Istoniense, 20",
 			"city": "Vasto",
@@ -25,7 +25,7 @@
 				"end": 2020,
 				"grade": "M. Sc.",
 				"university": "University of Trento",
-				"country" : "Italy",
+				"country": "Italy",
 				"title": "Mechatronics Engineering",
 				"thesis": "Enhancing UAV capabilities with machine learning on board.",
 				"specialization": "Mechanics--Mechatronics"
@@ -34,8 +34,8 @@
 				"start": 2008,
 				"end": 2015,
 				"grade": "Bachelor",
-				"university" : "Marche Polytechnic University",
-				"country" : "Italy",
+				"university": "Marche Polytechnic University",
+				"country": "Italy",
 				"title": "Mechanics Engineering",
 				"thesis": "Structural analysis of an automotive hot formed sheet component with variable thickness.",
 				"specialization": "Energy--Thermomechanical"
@@ -45,12 +45,12 @@
 			{
 				"language": "Italian",
 				"level": "mother tongue",
-				"certificate" : ""
+				"certificate": ""
 			},
 			{
 				"language": "English",
 				"level": "upper intermediate",
-				"certificate" : "Council of Europe Level B1 (PET), Cambridge English - University of Cambridge"
+				"certificate": "Council of Europe Level B1 (PET), Cambridge English - University of Cambridge"
 			}
 		]
 	},
@@ -61,9 +61,9 @@
 			"location": "Naples, Italy",
 			"role": "RND Embedded Software Developer",
 			"start": "06/2020",
-			"end": 	"07/2020",
+			"end": "07/2020",
 			"description": "Developing application Qt/QML based for Automotive Grade Linux.",
-			"software": "C++/Qt, AGL (Automotive Grade Linux), qml",
+			"software": "C++/Qt, AGL (Automotive Grade Linux), QML, Git, GitLab",
 			"link": ""
 		},
 		{
@@ -144,7 +144,8 @@
 		{
 			"skill": "Package",
 			"type": [
-				"Matlab", "Simulink",
+				"Matlab",
+				"Simulink",
 				"Maple",
 				"Ansys",
 				"SolidWorks",
@@ -180,6 +181,12 @@
 			"year": 2015,
 			"subject": "Council of Europe Level B1 (PET)",
 			"entity": "Cambridge English, University of Cambridge",
+			"link": ""
+		},
+		{
+			"year": 2020,
+			"subject" :  "Graduation to Professional Engineer (Italian legislation)",
+			"entity": "24 July - \\RNum{1} session - University of Trento",
 			"link": ""
 		}
 	]

@@ -1,42 +1,16 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 
-import os
-import json
 import errno
-
-
-class IdentifyingFactory:
-    factories = {}
-
-    def addFactory(id, shapeFactory):
-        ShapeFactory.factories.put[id] = shapeFactory
-        addFactory = staticmethod(addFactory)
-
-    # A Template Method:
-    def createShape(id):
-        if not ShapeFactory.factories.has_key(id):
-            ShapeFactory.factories[id] = \
-                eval(id + '.Factory()')
-        return ShapeFactory.factories[id].create()
-    createShape = staticmethod(createShape)
-
-    def create_identifying(type):
-        pass
+import json
+import os
 
 
 class Identifying(object):
-    pass
-
-
-class Linkedin(Identifying):
-    pass
-
-
-
-class File(Identifying):
     def __init__(self) -> None:
         self.__data = {}
 
-    def read_from_file(self, namefile):
+    def read_from_file(self, namefile) -> None:
         if os.path.exists(namefile):
             with open(namefile) as infile:
                 self.__data = json.load(infile)
@@ -44,12 +18,12 @@ class File(Identifying):
             raise FileNotFoundError(
                 errno.ENOENT, os.strerror(errno.ENOENT), namefile)
 
-    def write_empty_structure(self, filename) -> None:
+    def write_empty_structure(self, filename="outfile.json") -> None:
         print("Not Implemented yet")
         pass
 
     @property
-    def information(self) -> dict:
+    def data(self) -> dict:
         return self.__data
 
     @property
@@ -72,6 +46,10 @@ class File(Identifying):
     def certificates(self) -> list:
         return self.__data["certificate"]
 
-    @information.setter
+    @data.setter
     def data(self, a):
         self.__data = a
+
+
+class Linkedin:
+    pass
