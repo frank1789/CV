@@ -1,9 +1,7 @@
 import sys
 from abc import ABC, abstractmethod
 
-from curriculum.curriculumvitae import CurriculumVitae
-from curriculum.curriculumvitae import EuropassTheme
-from curriculum.curriculumvitae import FriggeriTheme
+from curriculum.curriculumvitae import FriggeriTheme, EuropassTheme, CurriculumVitae
 
 
 class AbstractFactory(ABC):
@@ -35,11 +33,11 @@ def setup_curriculum_vitae(style, data, filename="curriculumvitae.tex"):
     assert (type(filename) is str), "argument \"filename\" must be a string"
     assert (filename.endswith(".tex")), "argument 'filename' must be end with .tex"
     print("Check setup curriculum vitae")
-
-    if style is "friggeri" or style is "Friggeri":
+    # compare value of template and build
+    if style == "friggeri" or style == "Friggeri":
         cv = mycv(FriggeriCurriculumVitae())
         print("Initialize...\nReady")
-    elif style is "europass" or style is "Europass":
+    elif style == "europass" or style == "Europass":
         cv = mycv(EuropassCurriculumVitae())
         print("Initialize...\nReady")
     else:
@@ -52,7 +50,3 @@ def setup_curriculum_vitae(style, data, filename="curriculumvitae.tex"):
     cv.write_on_file(filename)
     cv.compile(filename=filename)
     print("Done")
-
-
-if __name__ == "__main__":
-    setup_curriculum_vitae("friggeri")
