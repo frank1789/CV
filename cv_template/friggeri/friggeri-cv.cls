@@ -12,6 +12,7 @@
 \usepackage{multicol}
 \usepackage{tabularx}
 
+\newcommand{\RNum}[1]{\uppercase\expandafter{\romannumeral #1\relax}}
 
 %%%%%%%%%%
 % Colors %
