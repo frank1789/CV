@@ -23,7 +23,9 @@ docker-run:
 	docker run -it -v ${PWD}:/cv cv
 
 resume:
-	python3 resume.py
+	python3 resume.py information.json \
+	--template Friggeri \
+	--output FrancescoArgentieri-Resume.tex
 
 
 letter:
