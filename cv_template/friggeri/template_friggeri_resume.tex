@@ -158,7 +158,7 @@
 \section{certification}
   \begin{entrylist}
 
-\BLOCK{ for c in certificate}
+\BLOCK{ for c in certificate|sort(attribute='year', reverse = True) }
 \BLOCK{ if c["link"] != None }
     \entrycertificate{\VAR{c["year"]}}{\href{\VAR{c["link"]}}{\VAR{c["subject"]}}}{\VAR{c["entity"]}}
 \BLOCK{else}
