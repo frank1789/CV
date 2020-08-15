@@ -27,6 +27,10 @@ resume:
 	--template Friggeri \
 	--output FrancescoArgentieri-Resume.tex
 
+	# copy outside build folder pdf generated
+	mv -f */FrancescoArgentieri-Resume.pdf ..
+
+
 
 letter:
 	@echo "${blue}----------------------------------${end}"
