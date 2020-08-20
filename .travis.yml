@@ -41,6 +41,9 @@ deploy:
   on:
     repo: frank1789/CV
 
+after_deploy:
+- bash ./travis_push.sh
+
 notifications:
   email:
     on_success: change
