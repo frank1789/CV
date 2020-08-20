@@ -1,9 +1,22 @@
 import os
 import re
 from abc import ABC, abstractmethod
+from datetime import date
 from shutil import copyfile
 
 import jinja2
+
+
+def now_to_date(data: dict) -> dict:
+    if data["end"] == "NOW" or data["end"] == "now" or data["end"] == "Now":
+        today = date.today()
+        # dd/mm/YY
+        mmYY = today.strftime("%m/%Y")
+        print("set end date", mmYY)
+        data["end"] = mmYY
+    else:
+        pass
+    return data
 
 
 def dict_to_list_tuple(data: dict) -> list:
@@ -65,7 +78,8 @@ class FriggeriTheme(CurriculumVitae):
         education = data["data"]["education"]
         skills = dict_to_list_tuple(data["skillset"])
         certificate = data["certificate"]
-        experience = data["experience"]
+        update_exp = [now_to_date(d) for d in data["experience"]]
+        experience = update_exp
 
         # fill template
         self.rawcv = template.render(
