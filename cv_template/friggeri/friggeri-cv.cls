@@ -212,7 +212,7 @@
 % 
 \newcommand{\entry}[8]{%
   \parbox[t]{11.5cm}{%
-    \begin{tabular}{l c r p{2mm} l r}
+    \begin{tabular}{l c p{15mm} p{2mm} l r}
       #1  & -- & #2 & \hfill & \textbf{#3}\hfill & {\footnotesize\addfontfeature{Color=lightgray} #4} \\
           &    &    & \hfill & \multicolumn{2}{p{100mm}}{#5}\\
           &    &    & \hfill & \multicolumn{2}{p{100mm}}{#6}\\
