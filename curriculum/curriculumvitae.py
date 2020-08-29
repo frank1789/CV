@@ -9,11 +9,7 @@ import jinja2
 
 def now_to_date(data: dict) -> dict:
     if data["end"] == "NOW" or data["end"] == "now" or data["end"] == "Now":
-        today = date.today()
-        # dd/mm/YY
-        mmYY = today.strftime("%m/%Y")
-        print("set end date", mmYY)
-        data["end"] = mmYY
+        data["end"] = "\MakeUppercase{present}"
     else:
         pass
     return data
