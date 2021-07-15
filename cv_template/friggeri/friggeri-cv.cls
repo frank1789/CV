@@ -173,7 +173,7 @@
 %    #1 start date
 %    #2 end date
 %    #3 course title
-%    #4 univeristy
+%    #4 university
 %    #5 thesis
 %    #6 other
 % 
@@ -194,7 +194,7 @@
           &    &    & \hfill & \multicolumn{2}{l}{#6}
     \end{tabular}
   }
-  \vspace{3.5mm}\\
+  \vspace{2.5mm}\\
 }
 
 % entry command to enter the experiences gained.
@@ -214,9 +214,9 @@
   \parbox[t]{11.5cm}{%
     \begin{tabular}{l c p{15mm} p{2mm} l r}
       #1  & -- & #2 & \hfill & \textbf{#3}\hfill & {\footnotesize\addfontfeature{Color=lightgray} #4} \\
-          &    &    & \hfill & \multicolumn{2}{p{100mm}}{#5}\\
-          &    &    & \hfill & \multicolumn{2}{p{100mm}}{#6}\\
-          &    &    & \hfill & \multicolumn{1}{p{85mm}}{#7} & \multicolumn{1}{r}{#8}\\
+          &    &    & \hfill & \multicolumn{2}{p{100mm}}{\small{#5}}\\
+          &    &    & \hfill & \multicolumn{2}{p{100mm}}{\small{#6}}\\
+          &    &    & \hfill & \multicolumn{1}{p{85mm}}{\footnotesize{#7}} & \multicolumn{1}{r}{\footnotesize{#8}}\\
     \end{tabular}
   }
   \vspace{2.5mm}\\

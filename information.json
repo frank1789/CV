@@ -27,7 +27,7 @@
 				"university": "University of Trento",
 				"country": "Italy",
 				"title": "Mechatronics Engineering",
-				"thesis": "Enhancing UAV capabilities with machine learning on board.",
+				"thesis": "Enhancing UAV capabilities with machine learning on board",
 				"specialization": "Mechanics--Mechatronics"
 			},
 			{
@@ -37,7 +37,7 @@
 				"university": "Marche Polytechnic University",
 				"country": "Italy",
 				"title": "Mechanics Engineering",
-				"thesis": "Structural analysis of an automotive hot formed sheet component with variable thickness.",
+				"thesis": "Structural analysis of an automotive hot formed sheet component with variable thickness",
 				"specialization": "Energy--Thermomechanical"
 			}
 		],
@@ -59,10 +59,10 @@
 			"title": "Embedded Software Developer",
 			"where": "Kineton",
 			"location": "Naples, Italy",
-			"role": "RND Embedded Software Developer",
+			"role": "R&D Embedded Software Developer",
 			"start": "06/2020",
 			"end": "NOW",
-			"description": "Developing application Qt/QML based for Automotive Grade Linux.",
+			"description": "Developing application Qt/QML for Automotive Grade Linux. \\newline Experience in software development using OOP in C++.\\newline Proficiency in C++14/17/ STL, and Linux Environment.",
 			"software": "C++/Qt, AGL (Automotive Grade Linux), QML, Git, GitLab",
 			"link": ""
 		},
@@ -84,7 +84,7 @@
 			"role": "univ. project",
 			"start": "09/2018",
 			"end": "11/2018",
-			"description": "Training CNN for binary classification by refinement techniques starting from already known models. Optimization and execution for devices low power consumption hardware such as Intel Movidius USB and Raspberry Pi 3B.",
+			"description": "Train CNN for binary classification by refinement techniques starting from already known models. Optimization and execution for devices low power consumption hardware such as Intel Movidius USB and Raspberry Pi 3B.",
 			"software": "Python, Keras, Tensorflow, Altair PBS (HPC), \\LaTeX",
 			"link": "https://github.com/frank1789/NeuralNetworks"
 		},
@@ -95,7 +95,7 @@
 			"role": "univ. project",
 			"start": "09/2017",
 			"end": "06/2018",
-			"description": "Project where we consider the problem of exploring an environment unknown with a team of robots. The objective the goal is to minimize the overall exploration time. We using SLAM techniques based on Montecarlo to reconstruct the map using several robots at same time to map environment.",
+			"description": "The project explores the problem of localization and mapping for an unknown environment with a team of robots. The simulation shows SLAM techniques based on Montecarlo to reconstruct the map using several robots at the same time to map the environment.",
 			"software": "Matlab, mex, C++, \\LaTeX",
 			"link": "https://github.com/frank1789/DistributedSystemProject"
 		},
@@ -106,7 +106,7 @@
 			"role": "univ. project",
 			"start": "05/2017",
 			"end": "08/2017",
-			"description": "Design with Finite Elements. The purpose is to present a consistent finite-element formulation, developed to predict and analyzing free vibration characteristics of two different helicopters tail-boom structures con approccio static structural and dynamic analysis in rotor's starting phase.",
+			"description": "The project finite-element developed to predict and analyzing free vibration characteristics of two different helicopters tail structures using static structural and dynamic analysis emphasis on the rotor's starting phase.",
 			"software": "Ansys Mechanical (APDL), \\LaTeX",
 			"link": "https://github.com/frank1789/FEM-Analysis---Helicopter-s-Tail"
 		},
@@ -117,7 +117,7 @@
 			"role": "Intership",
 			"start": "02/2015",
 			"end": "06/2015",
-			"description": "Developing approaches to study automotive components hot formed with variable thickness by FEM analysis. The purpose was compare the component with variable thickness, verify its response to static stresses respect a previous study where the same component had constant thickness.",
+			"description": "The project developed regarding automotive components hot formed with variable thickness by FEM analysis. The purpose was to compare the components with variables thickness, verify its response to static stresses respect a previous study where the same component had constant thickness.",
 			"software": "Ansys Mechanical, Altair  HyperMesh, LsDyna, Qt, \\LaTeX",
 			"link": "https://github.com/frank1789/LsDynaToAPDL"
 		}

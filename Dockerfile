@@ -1,11 +1,11 @@
-FROM ubuntu:19.10
+FROM ubuntu:latest
 LABEL version="0.1.0" maintaner="Francesco Argentieri <francesco.argentieri89@gmail.com>"
 ENV DEBIAN_FRONTEND noninteractive
 
 ENV DIR /cv
 
-RUN apt-get update -qy && \
-    apt-get upgrade -qy && \
+RUN apt-get update -y && \
+    apt-get upgrade -y && \
     apt-get install -qy --no-install-recommends git \
     make \
     wget \

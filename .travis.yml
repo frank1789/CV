@@ -1,4 +1,3 @@
-sudo: required
 language: python
 python:
     - "3.6"
@@ -20,17 +19,16 @@ env:
     - DOCKER_CACHE_FILE=/home/travis/docker/cache.tar.gz
 
 before_install:
-  - sudo apt-get update
   - pip3 install dropbox
   - docker build -t cv .
 
 script:
 - make docker-run
-- if [[ ${TRAVIS_BRANCH} == "master" ]] && [[ ${TRAVIS_PULL_REQUEST} == "false" ]]; then mkdir -p $(dirname ${DOCKER_CACHE_FILE}) ; docker save $(docker history -q ${DOCKER_REPOSITORY}:${TRAVIS_COMMIT}  | grep -v '<missing>') | gzip > ${DOCKER_CACHE_FILE}; fi
+
 
 after_success:
 - bash deploy.sh
-- python3 upload_file.py $DROPBOX_TOKEN FrancescoArgentieri-Resume.pdf
+- python3 upload_file.py $DROPBOX_TOKEN $(find / -name "FrancescoArgentieri-Resume.pdf")
 
 deploy:
   provider: releases
