@@ -4,8 +4,8 @@ ENV DEBIAN_FRONTEND noninteractive
 
 ENV DIR /cv
 
-RUN apt-get update -qy && \
-    apt-get upgrade -qy && \
+RUN apt-get update -y && \
+    apt-get upgrade -y && \
     apt-get install -qy --no-install-recommends git \
     make \
     wget \
