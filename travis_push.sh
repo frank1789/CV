@@ -15,7 +15,7 @@ commit_pdf_files() {
   # Create a new commit with a custom build message
   # with "[skip ci]" to avoid a build loop
   # and Travis build number for reference
-  git commit -m "Thesis Release: $DATE (Build $TRAVIS_BUILD_NUMBER)" -m "[skip ci]"
+  git commit -m "CV Release: $DATE (Build $TRAVIS_BUILD_NUMBER)" -m "[skip ci]"
 }
 
 upload_files() {
