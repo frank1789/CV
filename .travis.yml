@@ -19,8 +19,6 @@ env:
     - DOCKER_CACHE_FILE=/home/travis/docker/cache.tar.gz
 
 before_install:
-  - apt-get update
-  - apt-get upgrade -y
   - pip3 install dropbox
   - docker build -t cv .
 
