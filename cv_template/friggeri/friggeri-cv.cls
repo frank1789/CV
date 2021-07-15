@@ -173,7 +173,7 @@
 %    #1 start date
 %    #2 end date
 %    #3 course title
-%    #4 univeristy
+%    #4 university
 %    #5 thesis
 %    #6 other
 % 
@@ -194,7 +194,7 @@
           &    &    & \hfill & \multicolumn{2}{l}{#6}
     \end{tabular}
   }
-  \vspace{3.5mm}\\
+  \vspace{2.5mm}\\
 }
 
 % entry command to enter the experiences gained.
