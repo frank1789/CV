@@ -1,4 +1,4 @@
-FROM ubuntu:19.10
+FROM ubuntu:LATEST
 LABEL version="0.1.0" maintaner="Francesco Argentieri <francesco.argentieri89@gmail.com>"
 ENV DEBIAN_FRONTEND noninteractive
 
