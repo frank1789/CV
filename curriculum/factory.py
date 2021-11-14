@@ -39,12 +39,12 @@ def setup_curriculum_vitae(style, data, filename="curriculumvitae.tex"):
         print("Initialize...\nReady")
     elif style == "europass" or style == "Europass":
         cv = mycv(EuropassCurriculumVitae())
-        print("Initialize...\nReady")
     else:
-        print("Template request is not implemented yet")
-        sys.exit(0)
+        print("Template request is not yet implemented.")
+        sys.exit(-1)
 
-    print("Prepare CV\nTake a while...")
+    print("Prepare CV")
+    print("Take a while...")
     cv.build_theme(style.lower())
     cv.prepare(data)
     cv.write_on_file(filename)

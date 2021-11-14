@@ -48,7 +48,8 @@ class FriggeriTheme(CurriculumVitae):
         self.latex_environment = None
 
     def build_theme(self, theme) -> None:
-        self.dir_template = os.path.join(os.getcwd(), "cv_template", f"{theme}")
+        self.dir_template = os.path.join(
+            os.getcwd(), "cv_template", f"{theme}")
         self.theme = (self.dir_template, f"template_{theme}_resume.tex")
 
     def prepare(self, data) -> None:
@@ -67,7 +68,8 @@ class FriggeriTheme(CurriculumVitae):
         )
 
         # check template folder
-        template = self.latex_environment.get_template(os.path.join(self.theme[0], self.theme[1]))
+        template = self.latex_environment.get_template(
+            os.path.join(self.theme[0], self.theme[1]))
 
         # alias data fields
         pers = data["data"]
@@ -134,7 +136,8 @@ class EuropassTheme(CurriculumVitae):
         self.latex_environment = None
 
     def build_theme(self, theme) -> None:
-        self.dir_template = os.path.join(os.getcwd(), "cv_template", f"{theme}")
+        self.dir_template = os.path.join(
+            os.getcwd(), "cv_template", f"{theme}")
         self.theme = (self.dir_template, f"template_{theme}_resume.tex")
 
     def prepare(self, data) -> None:
@@ -153,7 +156,8 @@ class EuropassTheme(CurriculumVitae):
         )
 
         # check template folder
-        template = self.latex_environment.get_template(os.path.join(self.theme[0], self.theme[1]))
+        template = self.latex_environment.get_template(
+            os.path.join(self.theme[0], self.theme[1]))
 
         # alias data fields
         pers = data["data"]
