@@ -32,8 +32,7 @@ after_success:
 
 deploy:
   provider: releases
-  api_key:
-    secure: a9Nb2zk8flfwDMqq1BxgVv0Zu49P/NVwnp64Bsq4UkO0ZiKbWrcnPB8TQXAquXHh3L7N8lZS3Y4sK89u15q7Zm42g79rxvsV+H/pUdXhe3EkXo0bW1nKEAvgN9UqEJwobLpClEstd8RRlmQAKFrqpFl5hMiodOrn0WVTC7e7XvsFqFe2XfpOmQiUSGHDjIb7el5MriNpwApOd00T+3AZRb5GlBLWKKU5RQDiWldLD+QlroR8ldUNC7UcDyVWfKi2rnHCXEKZzdIIjlzDLcufTOmTqBPw0dE4ksQfYSEZvMmD+7siwVxCS/RCnLN9XuO+qR+Skwc8TEWuwZBGLN0Ags3llHGsyR922wgElbiwK/qJvpJclFb4DGy9DSyfsZ4k3BilMNusXooKd/Z4CPqBvfHu3CXDtT/69gY6kxSLO+tSP/ua9Cji6E1MQyTdi0SnJiqoxlfM9i9Q4XkAGTwCcexi57syHT3jiGh6C0h1cC+/yLNJiWBzSisXAmtdVCEF/D8EPLtSN7jCh0yKksStksQ2+Be5SYfIS8kEckQ6Mcu8fb2V62AgOK/YwGjm9iaCjkLGCS8wYaaw3K19fcuAaUHDm13x+dpQnA2QAeOOdtURPFFdnS0T6TU1trpAP46zB1TVBeQ+GoSH111ICAkTQUKCpwpae1g2jD0Cd1ksMRE=
+  api_key: $GITHUB_TOKEN
   file: FrancescoArgentieri-Resume.pdf
   release_notes: "Automatically build by Travis CI"
   on:
