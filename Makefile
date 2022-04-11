@@ -28,7 +28,7 @@ resume:
 	--output FrancescoArgentieri-Resume.tex
 
 	# copy outside build folder pdf generated
-	mv -f build/FrancescoArgentieri-Resume.pdf ${PWD}
+	cp -f build/FrancescoArgentieri-Resume.pdf ${PWD}
 
 
 
