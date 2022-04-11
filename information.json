@@ -65,7 +65,9 @@
 			"description": "Developing application Qt/QML for Automotive Grade Linux. \\newline Experience in software development using OOP in C++.\\newline Proficiency in C++14/17/ STL, and Linux Environment.",
 			"software": "C++/Qt, AGL (Automotive Grade Linux), QML, Git, GitLab",
 			"link": ""
-		},
+		}
+	],
+	"universitary project":[
 		{
 			"title": "Enhancing UAV capabilities with machine learning on board",
 			"where": "University of Trento",
@@ -188,6 +190,18 @@
 			"subject" :  "Graduation to Professional Engineer (Italian legislation)",
 			"entity": "24 July - \\RNum{1} session - University of Trento",
 			"link": ""
+		},
+		{
+			"year": 2021,
+			"subject" :  "ROS For Beginners (ROS Noetic, Melodic, Kinetic)",
+			"entity": "Udemy",
+			"link": "ude.my/UC-75ace3a7-d55e-4b95-9711-6683fccf8626.jpeg"
+		},
+		{
+			"year": 2021,
+			"subject" :  "Autonomous Robots: Kalman Filter",
+			"entity": "Udemy",
+			"link": "ude.my/UC-ec884819-0264-49ad-9817-051751973227"
 		}
 	]
 }

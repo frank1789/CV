@@ -78,6 +78,7 @@ class FriggeriTheme(CurriculumVitae):
         certificate = data["certificate"]
         update_exp = [now_to_date(d) for d in data["experience"]]
         experience = update_exp
+        uniproject = data["universitary project"]
 
         # fill template
         self.rawcv = template.render(
@@ -97,6 +98,7 @@ class FriggeriTheme(CurriculumVitae):
             github=pers["social"]["github"],
             education=education,
             experience=experience,
+            uniproject=uniproject,
             skills=skills,
             certificate=certificate
         )
