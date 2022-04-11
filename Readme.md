@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/frank1789/CV.svg?branch=master)](https://travis-ci.com/frank1789/CV)
+[![Build Status](https://app.travis-ci.com/frank1789/CV.svg?branch=master)](https://app.travis-ci.com/frank1789/CV)
 [![License: CC BY-NC-SA 3.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%203.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-sa/3.0/)
 
 # CV
