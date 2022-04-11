@@ -9,7 +9,7 @@ setup_git() {
 commit_pdf_files() {
   git checkout master
   # Current month and year, e.g: Apr 2018
-   DATE=$(date +"%Y%m%d")
+  DATE=$(date +"%Y%m%d")
   # Stage the modified files in dist/output
   git add -f FrancescoArgentieri-Resume.pdf
   # Create a new commit with a custom build message

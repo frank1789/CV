@@ -1,8 +1,7 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 import argparse
-
 import dropbox
 
 
@@ -19,7 +18,8 @@ class TransferData:
         dbx = dropbox.Dropbox(self.access_token)
 
         with open(source, 'rb') as f:
-            dbx.files_upload(f.read(), destination, mode=dropbox.files.WriteMode.overwrite)
+            dbx.files_upload(f.read(), destination,
+                             mode=dropbox.files.WriteMode.overwrite)
 
 
 def parse():
@@ -28,7 +28,8 @@ def parse():
         description="Upload file to Dropbox",
         add_help=True)
     parser.add_argument("token_access", type=str, help="Token access")
-    parser.add_argument("file", type=str, help="File to upload", action="store")
+    parser.add_argument(
+        "file", type=str, help="File to upload", action="store")
     parser.add_argument("--destination",
                         type=str,
                         help="optional full path where upload file, without file-name",
