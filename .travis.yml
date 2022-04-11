@@ -28,7 +28,7 @@ script:
 
 after_success:
 - bash deploy.sh
-- python3 upload_file.py $DROPBOX_TOKEN $(find / -name "FrancescoArgentieri-Resume.pdf")
+- python3 upload_file.py $DROPBOX_TOKEN $(find / -name "FrancescoArgentieri-Resume.pdf" 2>/dev/null)
 
 deploy:
   provider: releases
