@@ -57,7 +57,7 @@
 	"experience": [
 		{
 			"title": "Software developer consultant",
-			"where": "Rimac Technologies -- Kineton",
+			"where": "Rimac Technologies - Kineton",
 			"location": "Naples, Italy",
 			"role": "R&D Embedded Software Developer",
 			"start": "05/2022",
@@ -72,7 +72,7 @@
 			"location": "Naples, Italy",
 			"role": "R&D Embedded Software Developer",
 			"start": "06/2020",
-			"end": "NOW",
+			"end": "05/2022",
 			"description": "I developed the applications Qt/QML and services for Automotive Grade Linux. So, I have gained experience in software development using OOP, enhancing my knowledge regarding C++17, STL and Linux Environment.",
 			"software": "C++, Qt, QML, AGL (Automotive Grade Linux), Git, GitLab",
 			"link": ""
