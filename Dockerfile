@@ -28,9 +28,6 @@ RUN apt-get update -y && \
 
 RUN pip3 install --user jinja2 dropbox
 
-RUN rm -rf /var/lib/apt/lists/* && \
-    apt-get clean
-
 WORKDIR ${DIR}
 
 ENTRYPOINT ["/bin/bash", "-c", "make", "-f", "Makefile"]

@@ -1,9 +1,9 @@
 os: linux
-dist: bionic
+dist: focal
 
 language: python
 python:
-    - "3.6"
+    - "3.9"
 
 addons:
   apt:
@@ -31,7 +31,7 @@ script:
 
 after_success:
 - bash deploy.sh
-#- python3 upload_file.py $DROPBOX_TOKEN $(find / -name "FrancescoArgentieri-Resume.pdf" 2>/dev/null)
+- python3 upload_file.py $DROPBOX_TOKEN $(find / -name "FrancescoArgentieri-Resume.pdf" 2>/dev/null)
 
 deploy:
   provider: releases
