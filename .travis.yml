@@ -3,39 +3,39 @@ dist: focal
 
 language: python
 python:
-    - "3.9"
+  - "3.9"
 
 services:
   - docker
 
 cache:
   directories:
-  - /home/travis/docker/
+    - /home/travis/docker/
 
 before_install:
   - pip3 install dropbox
   - docker build -t cv .
 
 script:
-- make docker-run
-
+  - make docker-run
 
 after_success:
-- bash deploy.sh
-- python3 upload_file.py $DROPBOX_TOKEN $(find / -name "FrancescoArgentieri-Resume.pdf" 2>/dev/null)
+  - bash deploy.sh
+  - python3 upload_file.py $DROPBOX_TOKEN build/FrancescoArgentieri-Resume.pdf
 
 deploy:
   provider: releases
   token: $GITHUB_TOKEN
-  file: 
+  file:
     - build/FrancescoArgentieri-Resume.pdf
+    - FrancescoArgentieri-Resume.pdf
   release_notes: "Automatically build by Travis CI"
   on:
     tags: true
     repo: frank1789/CV
 
 after_deploy:
-- bash ./travis_push.sh
+  - bash travis_push.sh
 
 notifications:
   email:
