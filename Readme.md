@@ -1,5 +1,6 @@
 [![Build Status](https://app.travis-ci.com/frank1789/CV.svg?branch=master)](https://app.travis-ci.com/frank1789/CV)
 [![License: CC BY-NC-SA 3.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%203.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-sa/3.0/)
+[![Compile CV and release PDF](https://github.com/frank1789/CV/actions/workflows/compile_and_release.yml/badge.svg)](https://github.com/frank1789/CV/actions/workflows/compile_and_release.yml)
 
 # CV
 Here I put my curriculum vitae, I wanted to make it in latex using the
