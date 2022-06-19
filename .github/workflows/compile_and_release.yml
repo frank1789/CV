@@ -28,11 +28,11 @@ jobs:
           --output FrancescoArgentieri-Resume.tex
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
+        env:
+          TEXINPUTS: ".:./build//:"
         with:
           root_file: build/FrancescoArgentieri-Resume.tex
-          env:
-            TEXINPUTS: ".:./build//:"
-          path: FrancescoArgentieri-Resume
+          path: FrancescoArgentieri-Resume.pdf
           glob_root_file: true
           latexmk_use_xelatex: true
           latexmk_shell_escape: true
