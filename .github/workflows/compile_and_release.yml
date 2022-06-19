@@ -18,7 +18,7 @@ jobs:
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v3
-      - name: Set up Pyhtone
+      - name: Set up Pyhton
         uses: actions/setup-python@v3
         with:
           python-version: 3.9
@@ -34,7 +34,7 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: build/FrancescoArgentieri-Resume.tex
+          root_file: "build/FrancescoArgentieri-Resume.tex build/*.cls"
           glob_root_file: true
           latexmk_use_xelatex: true
           latexmk_shell_escape: true
