@@ -1,6 +1,14 @@
+
 name: Compile CV and release PDF
 
 on:
+  workflow_dispatch:
+    # Inputs the workflow accepts.
+    inputs:
+      name:
+        description: 'CV'
+        # Input has to be provided for the workflow to run
+        required: true
   push:
     branches: [ $default-branch ]
 
