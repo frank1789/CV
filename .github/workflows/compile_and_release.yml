@@ -2,15 +2,10 @@
 name: Compile CV and release PDF
 
 on:
-  workflow_dispatch:
-    # Inputs the workflow accepts.
-    inputs:
-      name:
-        description: 'CV'
-        # Input has to be provided for the workflow to run
-        required: true
   push:
-    branches: [ $default-branch ]
+    branches: 
+      - main
+      - master
 
 jobs:
   build_latex:
@@ -34,7 +29,10 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: "build/FrancescoArgentieri-Resume.tex build/*.cls"
+          root_file: build/FrancescoArgentieri-Resume.tex
+          env:
+            TEXINPUTS: ".:./build//:"
+          path: FrancescoArgentieri-Resume
           glob_root_file: true
           latexmk_use_xelatex: true
           latexmk_shell_escape: true
