@@ -5,21 +5,12 @@ language: python
 python:
     - "3.9"
 
-addons:
-  apt:
-    packages:
-      - docker-ce
-
 services:
   - docker
 
 cache:
   directories:
   - /home/travis/docker/
-
-env:
-  global:
-    - DOCKER_CACHE_FILE=/home/travis/docker/cache.tar.gz
 
 before_install:
   - pip3 install dropbox
