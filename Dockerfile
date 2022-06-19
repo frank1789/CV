@@ -14,7 +14,7 @@ RUN apt-get update -y && \
     fonts-font-awesome \
     unzip \
     texlive-full \
-    python-pygments gnuplot \
+    python3-pygments gnuplot \
     texlive-base \
     texlive-latex-extra \
     texlive-xetex \
