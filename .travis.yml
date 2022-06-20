@@ -20,8 +20,10 @@ script:
   - make docker-run
 
 after_success:
-  - bash deploy.sh
   - python3 upload_file.py $DROPBOX_TOKEN build/FrancescoArgentieri-Resume.pdf
+
+before_deploy: 
+  - bash deploy.sh
 
 deploy:
   provider: releases
@@ -30,6 +32,7 @@ deploy:
     - build/FrancescoArgentieri-Resume.pdf
     - FrancescoArgentieri-Resume.pdf
   release_notes: "Automatically build by Travis CI"
+  skip_cleanup: true
   on:
     tags: true
     repo: frank1789/CV
