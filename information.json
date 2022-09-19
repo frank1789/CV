@@ -56,13 +56,13 @@
 	},
 	"experience": [
 		{
-			"title": "Software developer consultant",
+			"title": "Software developer - Consultant",
 			"where": "Rimac Technologies - Kineton",
 			"location": "Naples, Italy",
-			"role": "R&D Embedded Software Developer",
+			"role": "R&D Software Developer",
 			"start": "05/2022",
 			"end": "NOW",
-			"description": "Developing application Qt/QML/C++17.",
+			"description": "Infotainment software developments for Hyper/Luxury cars.\nProgramming in C++17 language and use of Qt framework.",
 			"software": "C++, Qt, QML, Git, BitBucket, JIRA",
 			"link": ""
 		},
@@ -78,7 +78,7 @@
 			"link": ""
 		}
 	],
-	"universitary project":[
+	"academic projects":[
 		{
 			"title": "Enhancing UAV capabilities with machine learning on board",
 			"where": "University of Trento",
@@ -160,8 +160,7 @@
 				"HyperWorks",
 				"Maple",
 				"Matlab",
-				"Simulink",
-				"SolidWorks"
+				"FreeCad"
 			]
 		},
 		{
@@ -169,7 +168,6 @@
 			"type": [
 				"\\LaTeX",
 				"Arduino",
-				"Internet networking",
 				"Raspberry Pi"
 			]
 		},
@@ -212,6 +210,12 @@
 			"subject" :  "Autonomous Robots: Kalman Filter",
 			"entity": "Udemy",
 			"link": "ude.my/UC-ec884819-0264-49ad-9817-051751973227"
+		},
+		{
+			"year": 2022,
+			"subject" :  "Solid C++",
+			"entity": "Udemy",
+			"link": "ude.my/UC-57ed0b77-aa7c-4cc6-a809-09b5940c7202"
 		}
 	]
 }
