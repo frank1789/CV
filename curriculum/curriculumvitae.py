@@ -165,7 +165,7 @@ class EuropassTheme(CurriculumVitae):
         pers = data["data"]
         education = data["data"]["education"]
         skills = dict_to_list_tuple(data["skillset"])
-        certificate = data["certificate"]
+        certificate = sorted(data["certificate"],key=lambda x:x['year'], reverse=True)
         experience = data["experience"]
 
         # fill template

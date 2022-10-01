@@ -183,42 +183,49 @@
 	"certificate": [
 		{
 			"year": 2018,
+			"month": 12,
 			"subject": "Safety in the laboratory",
 			"entity": "University of Trento",
 			"link": "https://bestr.it/award/show/657869a076ba7246b8667f9b2c26d9686d70e8be?ln=it"
 		},
 		{
 			"year": 2015,
+			"month": 12,
 			"subject": "Council of Europe Level B1 (PET)",
 			"entity": "Cambridge English, University of Cambridge",
 			"link": ""
 		},
 		{
 			"year": 2020,
+			"month": 7,
 			"subject" :  "Graduation to Professional Engineer (Italian legislation)",
 			"entity": "24 July - \\RNum{1} session - University of Trento",
 			"link": ""
 		},
 		{
 			"year": 2021,
+			"month": 2,
 			"subject" :  "ROS For Beginners (ROS Noetic, Melodic, Kinetic)",
 			"entity": "Udemy",
 			"link": "ude.my/UC-75ace3a7-d55e-4b95-9711-6683fccf8626.jpeg"
 		},
 		{
 			"year": 2021,
+			"month": 10,
 			"subject" :  "Autonomous Robots: Kalman Filter",
 			"entity": "Udemy",
 			"link": "ude.my/UC-ec884819-0264-49ad-9817-051751973227"
 		},
 		{
 			"year": 2022,
+			"month": 9,
 			"subject" :  "Solid C++",
 			"entity": "Udemy",
 			"link": "ude.my/UC-57ed0b77-aa7c-4cc6-a809-09b5940c7202"
 		},
 		{
 			"year": 2022,
+			"month": 10,
 			"subject" :  "Qt 6 Core Intermediate with C++",
 			"entity": "Udemy",
 			"link": "ude.my/UC-4fb5d74e-c9a1-409d-9e23-c344a0032f89"

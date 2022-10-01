@@ -175,11 +175,11 @@
 \section{certification}
   \begin{entrylist}
 
-\BLOCK{ for c in certificate|sort(attribute='year', reverse = True) }
+\BLOCK{ for c in certificate|sort(attribute='month', reverse = True)|sort(attribute='year', reverse = True) }
 \BLOCK{ if c["link"] != None }
-    \entrycertificate{\VAR{c["year"]}}{\href{\VAR{c["link"]}}{\VAR{c["subject"]}}}{\VAR{c["entity"]}}
+    \entrycertificate{\VAR{'%02d' % c["month"]}}{\VAR{c["year"]}}{\href{\VAR{c["link"]}}{\VAR{c["subject"]}}}{\VAR{c["entity"]}}
 \BLOCK{else}
-    \entrycertificate{\VAR{c["year"]}}{\VAR{c["subject"]}}}{\VAR{c["entity"]}}
+    \entrycertificate{\VAR{'%02d' % c["month"]}}{\VAR{c["year"]}}{\VAR{c["subject"]}}{\VAR{c["entity"]}}
 \BLOCK{ endif }
 \BLOCK{ endfor }
 

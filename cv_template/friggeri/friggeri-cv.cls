@@ -66,7 +66,7 @@
 \RequirePackage{calc}
 \RequirePackage{stackengine}
 
-% set-up fonts 
+% set-up fonts
 \newfontfamily\bodyfont[]{Roboto}
 \newfontfamily\thinfont[]{Roboto Light}
 \newfontfamily\headingfont[]{Roboto Bold}
@@ -169,14 +169,14 @@
 % within the education section. Compared to the original version, this
 % function builds a table with the data entered; this allows to obtain a
 % better alignment with the entered values.
-% Args: 
+% Args:
 %    #1 start date
 %    #2 end date
 %    #3 course title
 %    #4 university
 %    #5 thesis
 %    #6 other
-% 
+%
 % % example:
 %     \entrytitle
 %     {2015}
@@ -209,7 +209,7 @@
 %     #6 {aux field}
 %     #7 {link}
 %     #8 {logo}
-% 
+%
 \newcommand{\entry}[8]{%
   \parbox[t]{11.5cm}{%
     \begin{tabular}{l c p{15mm} p{2mm} l r}
@@ -230,12 +230,12 @@
 %     #2 {certification}
 %     #3 {company name}
 %
-\newcommand{\entrycertificate}[3]{%
-  \parbox[t]{11.5cm}{%
-    \begin{tabularx}{\textwidth}{p{9.25mm} p{110mm} r}
-      #1  & \textbf{#2} \\
-          & {\footnotesize\addfontfeature{Color=lightgray} #3}
-    \end{tabularx}%
+\newcommand{\entrycertificate}[4]{%
+  \parbox[t]{17cm}{%
+    \begin{tabular}{r c r c p{140mm}}
+      #1  &	/	& #2 		  & 	\hfill 	& \textbf{#3} \\
+	   		  & 	& \hfill 	&  	\hfill	&	{\footnotesize\addfontfeature{Color=lightgray} #4}
+    \end{tabular}
   }
   \vspace{1.5mm}\\
 }
