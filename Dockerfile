@@ -13,8 +13,8 @@ RUN apt-get update -y && \
     fonts-roboto \
     fonts-font-awesome \
     unzip \
+    gnuplot \
     texlive-full \
-    python3-pygments gnuplot \
     texlive-base \
     texlive-latex-extra \
     texlive-xetex \
@@ -22,6 +22,7 @@ RUN apt-get update -y && \
     texlive-science \
     texlive-latex-recommended \
     python3-pip python3-dev \
+    python3-pygments \
     && cd /usr/local/bin \
     && ln -s /usr/bin/python3 python 
     # && pip3 install --upgrade pip

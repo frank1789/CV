@@ -216,6 +216,12 @@
 			"subject" :  "Solid C++",
 			"entity": "Udemy",
 			"link": "ude.my/UC-57ed0b77-aa7c-4cc6-a809-09b5940c7202"
+		},
+		{
+			"year": 2022,
+			"subject" :  "Qt 6 Core Intermediate with C++",
+			"entity": "Udemy",
+			"link": "ude.my/UC-4fb5d74e-c9a1-409d-9e23-c344a0032f89"
 		}
 	]
 }
