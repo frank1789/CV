@@ -207,28 +207,28 @@
 			"month": 2,
 			"subject" :  "ROS For Beginners (ROS Noetic, Melodic, Kinetic)",
 			"entity": "Udemy",
-			"link": "ude.my/UC-75ace3a7-d55e-4b95-9711-6683fccf8626.jpeg"
+			"link": "https://www.udemy.com/certificate/UC-75ace3a7-d55e-4b95-9711-6683fccf8626.jpeg"
 		},
 		{
 			"year": 2021,
 			"month": 10,
 			"subject" :  "Autonomous Robots: Kalman Filter",
 			"entity": "Udemy",
-			"link": "ude.my/UC-ec884819-0264-49ad-9817-051751973227"
+			"link": "https://www.udemy.com/certificate/UC-ec884819-0264-49ad-9817-051751973227"
 		},
 		{
 			"year": 2022,
 			"month": 9,
 			"subject" :  "Solid C++",
 			"entity": "Udemy",
-			"link": "ude.my/UC-57ed0b77-aa7c-4cc6-a809-09b5940c7202"
+			"link": "https://www.udemy.com/certificate/UC-57ed0b77-aa7c-4cc6-a809-09b5940c7202"
 		},
 		{
 			"year": 2022,
 			"month": 10,
 			"subject" :  "Qt 6 Core Intermediate with C++",
 			"entity": "Udemy",
-			"link": "ude.my/UC-4fb5d74e-c9a1-409d-9e23-c344a0032f89"
+			"link": "https://www.udemy.com/certificate/UC-4fb5d74e-c9a1-409d-9e23-c344a0032f89"
 		}
 	]
 }
