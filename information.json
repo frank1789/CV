@@ -38,7 +38,7 @@
 				"country": "Italy",
 				"title": "Mechanics Engineering",
 				"thesis": "Structural analysis of an automotive hot formed sheet component with variable thickness",
-				"specialization": "Energy--Thermomechanical"
+				"specialization": "Energy--Thermo-mechanical"
 			}
 		],
 		"languages": [
@@ -229,6 +229,13 @@
 			"subject" :  "Qt 6 Core Intermediate with C++",
 			"entity": "Udemy",
 			"link": "https://www.udemy.com/certificate/UC-4fb5d74e-c9a1-409d-9e23-c344a0032f89"
+		},
+		{
+			"year": 2022,
+			"month": 10,
+			"subject" :  "Freecad 3D modeling",
+			"entity": "Udemy",
+			"link": "https://www.udemy.com/certificate/UC-8ed0cfa0-f455-467c-ac35-b0e3e007da89"
 		}
 	]
 }
